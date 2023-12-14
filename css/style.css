@@ -42,7 +42,7 @@
 
 body {
     max-width: 1440px;
-    margin: 16px auto !important;
+    margin: auto !important;
     padding: 0 3.429rem;
     background-color: transparent;
     font-family: "Cairo";
@@ -59,7 +59,7 @@ nav {
     position: fixed;
     top: 0;
     padding: 0 !important;
-    box-shadow: 0px 0px 10px rgba(238, 242, 243, 0.7);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.168);
     background-color: #fff;
 }
 
@@ -123,7 +123,7 @@ main {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border: 1px solid #ffffffac;
+    border: 1px solid rgba(129, 129, 129, 0.675);
     opacity: 1;
     background-color: #fff;
 }
@@ -448,11 +448,25 @@ li.nav-item .sRow {
 
 /* news start */
 
+.news {
+    margin-block: 48px;
+}
+
+.news-swiper {
+    overflow: hidden;
+    margin-block: 25px;
+    & .swiper-pagination {
+        bottom: auto !important;
+        padding-block: 10px;
+    }
+}
+
 .news-card {
     border-radius: 10px;
     height: 490px;
     background-color: transparent;
     position: relative;
+    max-width: 300px;
     & .card-inner {
         position: relative;
         width: 100%;
@@ -697,6 +711,19 @@ footer p {
     .navbar-nav .nav-link,
     .dropdown-item {
         font-size: 17px;
+    }
+}
+
+@media (min-width:1200px) {
+    .programs {
+        & .container {
+            max-width: 1330px !important;
+        }
+    }
+    .news {
+        & .container {
+            max-width: 1110px !important;
+        }
     }
 }
 

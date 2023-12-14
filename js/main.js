@@ -22,17 +22,16 @@ const programSwiper = new Swiper('.program-swiper', {
 
 })
 
-const newsSwiper = new Swiper('news-swiper', {
+const newsSwiper = new Swiper(".news-swiper", {
     // Optional parameters
-    direction: 'horizontal',
+    direction: "horizontal",
     loop: true,
     // If we need pagination
     pagination: {
-        el: '.swiper-pagination',
+        el: ".swiper-pagination",
         clickable: true,
     },
-
-})
+});
 
 // Function to be executed when the target element comes into view
 function onEntry(entry) {
