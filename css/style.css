@@ -811,7 +811,7 @@ footer p {
     .news-card {
         padding: 7px;
         margin-block: 10px;
-        width: 310px;
+        /* width: 310px; */
     }
 }
 
