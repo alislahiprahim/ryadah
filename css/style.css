@@ -48,6 +48,13 @@ body {
     font-family: "Cairo";
 }
 
+.btn-hover:hover{
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+
 header {
     position: sticky;
     top: 0;
@@ -59,7 +66,9 @@ nav {
     position: fixed;
     top: 0;
     padding: 0 !important;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.168);
+    -webkit-box-shadow: 0px 5px 9px -7px rgba(0, 0, 0, 0.19);
+-moz-box-shadow: 0px 5px 9px -7px rgba(0, 0, 0, 0.19);
+box-shadow: 0px 5px 9px -7px rgba(0, 0, 0, 0.19);
     background-color: #fff;
 }
 
@@ -106,7 +115,7 @@ main {
 }
 
 .swiper .swiper-wrapper .swiper-slide .layer p {
-    font-size: 27px;
+    font-size: 22px;
     margin: 0;
 }
 
@@ -459,6 +468,11 @@ li.nav-item .sRow {
         bottom: auto !important;
         padding-block: 10px;
     }
+    & .col-md-4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .news-card {
@@ -467,6 +481,7 @@ li.nav-item .sRow {
     background-color: transparent;
     position: relative;
     max-width: 300px;
+    width: 300px;
     & .card-inner {
         position: relative;
         width: 100%;
@@ -559,22 +574,17 @@ li.nav-item .sRow {
 
 
 /* partners */
-
-.campany-logo {
-    display: flex;
-    flex-wrap: wrap;
-    direction: rtl;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.campany-logo div {
-    width: 180px;
-    margin-block: 10px;
-}
-
-.campany-logo div img {
-    width: 100%;
+.partners-swiper {
+    padding-block: 48px;
+    overflow: hidden;
+    margin-block: 25px;
+    & img{
+        width: 50%;
+    }
+    & .swiper-pagination {
+        bottom: auto !important;
+        padding-block: 10px;
+    }
 }
 
 .title h2 {
@@ -612,11 +622,26 @@ footer {
 }
 
 .contact .image {
-    width: 150px;
+    background-image: url(../images/home/riyadah-footer.svg);
+    background-size: 90%90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    max-height: 252px;
 }
 
-.contact .image img {
-    width: 100%;
+.contact {
+    & li{
+     color: var(--text-color);   
+    }
+}
+
+.contact-apps{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
 }
 
 .contact ul li {
@@ -673,26 +698,9 @@ footer p {
         font-size: 25px;
     }
     .swiper .swiper-wrapper .swiper-slide .layer p {
-        font-size: 20px;
+        font-size: 18px;
     }
-    .campany-logo {
-        display: grid;
-        gap: 25px;
-        grid-auto-flow: column;
-        grid-auto-columns: 25%;
-        overflow-x: auto;
-        overscroll-behavior-inline: contain;
-        scroll-snap-type: x mandatory;
-        scroll-padding-inline: 25px;
-        justify-content: unset;
-    }
-    .campany-logo div {
-        scroll-snap-align: start;
-        width: auto;
-        img {
-            width: 80%;
-        }
-    }
+    
     .tab-content .program-card {
         margin-inline: 0;
         .card-header h2 {
@@ -706,7 +714,7 @@ footer p {
         font-size: 25px;
     }
     .swiper .swiper-wrapper .swiper-slide .layer p {
-        font-size: 20px;
+        font-size: 18px;
     }
     .navbar-nav .nav-link,
     .dropdown-item {
@@ -781,6 +789,11 @@ footer p {
     .p-inline-35 {
         padding-inline: 0px;
     }
+    .partners-swiper {
+        & img{
+            width: 80%;
+        }
+    }
 }
 
 
@@ -813,6 +826,14 @@ footer p {
         margin-block: 10px;
         /* width: 310px; */
     }
+    .partners-swiper {
+        & img{
+            width: 80%;
+        }
+    }
+    .contact-apps{
+        flex-direction: column;
+    }
 }
 
 
@@ -821,6 +842,11 @@ footer p {
 @media (max-width: 575.98px) {
     .contact .smallWidth {
         width: 50%;
+    }
+    .partners-swiper {
+        & img{
+            width: 80%;
+        }
     }
 }
 
@@ -839,5 +865,10 @@ footer p {
     }
     .contact ul li {
         font-size: 14px;
+    }
+    .partners-swiper {
+        & img{
+            width: 80%;
+        }
     }
 }

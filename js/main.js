@@ -8,6 +8,9 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-pagination',
         clickable: true,
     },
+    autoplay: {
+        delay: 5000,
+    },
 });
 
 const programSwiper = new Swiper('.program-swiper', {
@@ -33,6 +36,41 @@ const newsSwiper = new Swiper(".news-swiper", {
     },
 });
 
+const partnersSwiper = new Swiper(".partners-swiper", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    slidesPerView: 4,
+    autoplay: {
+        delay: 2000,
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        220: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+            slidesPerView: 4,
+            spaceBetween: 40
+        }
+    },
+    // pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    // },
+});
 // Function to be executed when the target element comes into view
 function onEntry(entry) {
     entry.forEach(change => {
