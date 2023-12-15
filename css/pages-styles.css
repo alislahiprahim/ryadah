@@ -110,6 +110,10 @@ li.nav-item .sRow {
     color: var(--main-color);
 }
 
+.dropdown-menu {
+    border: none;
+}
+
 .dropdown-item.active {
     &:visited {
         color: #fff;

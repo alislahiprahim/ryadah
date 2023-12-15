@@ -1,107 +1,132 @@
-const numbers = [18939, 44137, 44137, 44137, 48418]
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    autoplay: {
-        delay: 5000,
-    },
-});
+const numbers = [18939, 44137, 44137, 44137, 48418];
 
-const programSwiper = new Swiper('.program-swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-
-})
-
-const newsSwiper = new Swiper(".news-swiper", {
+function initSwipers() {
+  const swiper = new Swiper(".swiper", {
     // Optional parameters
     direction: "horizontal",
     loop: true,
     // If we need pagination
     pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+      el: ".swiper-pagination",
+      clickable: true,
     },
-});
+    autoplay: {
+      delay: 5000,
+    },
+  });
 
-const partnersSwiper = new Swiper(".partners-swiper", {
+  const programSwiper = new Swiper(".program-swiper", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+  const newsSwiper = new Swiper(".news-swiper", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+  const partnersSwiper = new Swiper(".partners-swiper", {
     // Optional parameters
     direction: "horizontal",
     loop: true,
     slidesPerView: 4,
     autoplay: {
-        delay: 2000,
+      delay: 2000,
     },
     breakpoints: {
-        // when window width is >= 320px
-        220: {
-            slidesPerView: 2,
-            spaceBetween: 20
-        },
-        // when window width is >= 320px
-        320: {
-            slidesPerView: 2,
-            spaceBetween: 20
-        },
-        // when window width is >= 480px
-        480: {
-            slidesPerView: 3,
-            spaceBetween: 30
-        },
-        // when window width is >= 640px
-        640: {
-            slidesPerView: 4,
-            spaceBetween: 40
-        }
+      // when window width is >= 320px
+      220: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
     },
     // pagination: {
     //     el: ".swiper-pagination",
     //     clickable: true,
     // },
-});
+  });
+}
+
 // Function to be executed when the target element comes into view
 function onEntry(entry) {
-    entry.forEach(change => {
-        if (change.isIntersecting) {
-
-            // Do something when the target element is in view
-            // Replace this with your desired action
-            console.log('Target element is now visible');
-            document.querySelector('#number-wrapper').classList.remove('d-none');
-            // Run your JS script here
-            odometer1.innerHTML = numbers[0];
-            odometer2.innerHTML = numbers[1];
-            odometer3.innerHTML = numbers[2];
-            odometer4.innerHTML = numbers[3];
-            odometer5.innerHTML = numbers[4];
-
-        }
-    });
+  entry.forEach((change) => {
+    if (change.isIntersecting) {
+      // Do something when the target element is in view
+      // Replace this with your desired action
+      console.log("Target element is now visible");
+      document.querySelector("#number-wrapper").classList.remove("d-none");
+      // Run your JS script here
+      odometer1.innerHTML = numbers[0];
+      odometer2.innerHTML = numbers[1];
+      odometer3.innerHTML = numbers[2];
+      odometer4.innerHTML = numbers[3];
+      odometer5.innerHTML = numbers[4];
+    }
+  });
 }
 
 // Create an intersection observer instance
 const observer = new IntersectionObserver(onEntry, {
-    root: null, // Use the viewport as the root
-    rootMargin: '0px', // No margin
-    threshold: 0.5 // 0-1, percentage of the element's visibility required to trigger the callback
+  root: null, // Use the viewport as the root
+  rootMargin: "0px", // No margin
+  threshold: 0.5, // 0-1, percentage of the element's visibility required to trigger the callback
 });
 
 // Get the target element
-const target = document.querySelector('#numbers');
+const target = document.querySelector("#numbers");
 
 // Start observing the target element
 if (target) {
-    observer.observe(target);
+  observer.observe(target);
 }
+
+function scrollTop() {
+  window.addEventListener("scroll", function () {
+    const scrollToTop = document.getElementById("scroll-top");
+    if (
+      document.body.scrollTop > 200 ||
+      document.documentElement.scrollTop > 200
+    ) {
+      scrollToTop.style.display = "flex";
+    } else {
+      scrollToTop.style.display = "none";
+    }
+  });
+
+  document.getElementById("scroll-top").addEventListener("click", function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.location.href.includes("index")) initSwipers();
+  scrollTop();
+});
