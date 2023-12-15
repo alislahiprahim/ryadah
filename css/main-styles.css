@@ -205,12 +205,12 @@ li.nav-item .sRow {
     transition: 0.5s transform;
 }
 
-.navbar-nav .nav-link[aria-expanded=true] i {
+.navbar-nav .nav-link[aria-expanded="true"] i {
     transform-origin: 60% 40%;
     transform: rotate(180deg);
 }
 
-.navbar-nav .nav-link[aria-expanded=false] i {
+.navbar-nav .nav-link[aria-expanded="false"] i {
     transform-origin: 60% 40%;
     transform: rotate(0deg);
 }
@@ -515,7 +515,7 @@ li.nav-item .sRow {
         border-radius: 10px;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-        box-shadow: 0 2rem 3rem rgba(0, 0, 0, .05);
+        box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.05);
     }
     & .card-content {
         border-radius: 10px;
@@ -566,13 +566,13 @@ li.nav-item .sRow {
             bottom: 20px;
             left: 20px;
             padding: 7px;
-            transition: color .2s ease-in-out;
+            transition: color 0.2s ease-in-out;
             & .fa-chevron-left {
                 padding: 5px 7px;
                 border-radius: 50%;
                 border: 1px solid;
                 font-size: 12px;
-                transition: color .1s ease-in;
+                transition: color 0.1s ease-in;
             }
             &:hover {
                 color: var(--link-color);
@@ -676,11 +676,21 @@ footer {
     height: 3rem;
     background-color: var(--main-color);
     border-radius: 50%;
+    transition: color 0.2s ease-in-out;
 }
 
 .contact .links a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.links:hover {
+    background-color: #fff;
+    border: 1px solid var(--main-color);
+    a {
+        color: var(--main-color);
+    }
 }
 
 
@@ -737,7 +747,7 @@ footer p {
     }
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
     .programs {
         & .container {
             max-width: 1330px !important;
