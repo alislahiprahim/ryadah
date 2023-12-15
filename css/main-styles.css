@@ -49,13 +49,11 @@ body {
 }
 
 .btn-hover:hover,
-:active,
-:focus {
+.btn-hover:active {
     background-color: transparent;
     color: #fff;
     border-color: #fff;
 }
-
 
 header {
     position: sticky;
@@ -187,6 +185,16 @@ li.nav-item .sRow {
     color: var(--main-color);
 }
 
+.dropdown-item.active {
+    &:visited {
+        color: #fff;
+    }
+}
+
+.dropdown-item:active {
+    color: #fff;
+}
+
 .dropdown-toggle::after {
     content: "";
     border: none;
@@ -197,9 +205,14 @@ li.nav-item .sRow {
     transition: 0.5s transform;
 }
 
-.navbar-nav .nav-link:hover i {
+.navbar-nav .nav-link[aria-expanded=true] i {
     transform-origin: 60% 40%;
     transform: rotate(180deg);
+}
+
+.navbar-nav .nav-link[aria-expanded=false] i {
+    transform-origin: 60% 40%;
+    transform: rotate(0deg);
 }
 
 .btn-nav {
@@ -268,12 +281,10 @@ li.nav-item .sRow {
 .layer-title .content-tabs ul {
     border-radius: 10px;
     background-color: var(--body-color);
-
     .nav-link {
         border-radius: 10px;
         color: var(--text-color);
     }
-
     .active {
         color: var(--text-color);
         background-color: var(--main-color);
@@ -290,7 +301,6 @@ li.nav-item .sRow {
     position: relative;
     z-index: 2;
     margin-bottom: 48px;
-
     &:has(.p1) {
         padding-bottom: 48px;
     }
@@ -302,7 +312,6 @@ li.nav-item .sRow {
     background-color: var(--main-color);
     width: 100%;
     height: 75%;
-
     &::after {
         content: "";
         position: absolute;
@@ -322,40 +331,34 @@ li.nav-item .sRow {
     box-shadow: 0px 0px 40px #00000010;
     padding: 16px;
     margin-inline: 35px;
-
     & .card-image {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
     }
-
     & img {
         height: 245px;
         object-fit: contain;
         aspect-ratio: 1/1;
         width: inherit;
     }
-
     & .card-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
         padding-block: 10px;
-
         & h2 {
             color: var(--main-color);
             font-size: 22px;
             font-weight: 600;
         }
-
         & button {
             background-color: var(--main-color);
             color: #fff;
         }
     }
-
     & p {
         text-align: justify;
         color: var(--text-color);
@@ -367,7 +370,6 @@ li.nav-item .sRow {
 .program-swiper {
     overflow: hidden;
     margin-block: 25px;
-
     & .swiper-pagination {
         bottom: auto !important;
         padding-block: 10px;
@@ -385,21 +387,18 @@ li.nav-item .sRow {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
     & .num-wrapper {
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
         gap: 15px;
-
         & h4 {
             color: var(--text-color);
             font-size: 20px;
             font-weight: 400;
         }
     }
-
     & .number {
         position: relative;
         width: 150px;
@@ -409,12 +408,10 @@ li.nav-item .sRow {
         justify-content: center;
         border-radius: 50%;
         background-color: #fff;
-
         & .counter {
             background: #fff;
             z-index: 2;
             padding-top: 15px;
-
             & p {
                 font-family: "Cairo";
                 font-family: 800;
@@ -423,26 +420,22 @@ li.nav-item .sRow {
                 cursor: default;
             }
         }
-
         & .layout-border {
             background-color: #fff;
             position: absolute;
             width: 150px;
             height: 150px;
-
             & svg {
                 width: 150px;
                 height: 150px;
             }
         }
-
         & .ringsInner {
             display: inline-block;
             transition: opacity 0.3s, transform 0.8s;
             transform: scale(0.7);
             opacity: 0;
         }
-
         & .rings {
             position: absolute;
             top: 50%;
@@ -454,7 +447,6 @@ li.nav-item .sRow {
             justify-content: center;
         }
     }
-
     & :hover .ringsInner {
         transform: scale(1.3);
         opacity: 1;
@@ -469,7 +461,6 @@ li.nav-item .sRow {
     50% {
         stroke-dashoffset: 1570;
     }
-
     100% {
         stroke-dashoffset: 0;
     }
@@ -488,12 +479,10 @@ li.nav-item .sRow {
 .news-swiper {
     overflow: hidden;
     margin-block: 25px;
-
     & .swiper-pagination {
         bottom: auto !important;
         padding-block: 10px;
     }
-
     & .col-md-4 {
         display: flex;
         align-items: center;
@@ -508,7 +497,6 @@ li.nav-item .sRow {
     position: relative;
     max-width: 300px;
     width: 300px;
-
     & .card-inner {
         position: relative;
         width: 100%;
@@ -517,11 +505,9 @@ li.nav-item .sRow {
         transition: transform 1s;
         transform-style: preserve-3d;
     }
-
     &:hover .card-inner {
         transform: rotateY(180deg);
     }
-
     & .card-content,
     .card-back-content {
         position: absolute;
@@ -531,11 +517,9 @@ li.nav-item .sRow {
         backface-visibility: hidden;
         box-shadow: 0 2rem 3rem rgba(0, 0, 0, .05);
     }
-
     & .card-content {
         border-radius: 10px;
         overflow: hidden;
-
         & p {
             position: absolute;
             bottom: 40px;
@@ -545,19 +529,16 @@ li.nav-item .sRow {
             font-weight: 400;
             padding: 0px 20px;
         }
-
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
-
     & .card-back-content {
         transform: rotateY(180deg);
         background-color: #fff;
         width: 100%;
-
         & p {
             position: absolute;
             top: 140px;
@@ -567,7 +548,6 @@ li.nav-item .sRow {
             color: var(--text-color);
             padding-inline: 20px;
         }
-
         & h3 {
             position: absolute;
             top: 20px;
@@ -578,7 +558,6 @@ li.nav-item .sRow {
             color: var(--main-color);
             padding-inline: 20px;
         }
-
         & a {
             text-decoration: none;
             color: var(--main-color);
@@ -588,7 +567,6 @@ li.nav-item .sRow {
             left: 20px;
             padding: 7px;
             transition: color .2s ease-in-out;
-
             & .fa-chevron-left {
                 padding: 5px 7px;
                 border-radius: 50%;
@@ -596,10 +574,8 @@ li.nav-item .sRow {
                 font-size: 12px;
                 transition: color .1s ease-in;
             }
-
             &:hover {
                 color: var(--link-color);
-
                 & .fa-chevron-left {
                     color: var(--link-color);
                 }
@@ -613,15 +589,14 @@ li.nav-item .sRow {
 
 
 /* partners */
+
 .partners-swiper {
     padding-block: 48px;
     overflow: hidden;
     margin-block: 25px;
-
     & img {
         width: 50%;
     }
-
     & .swiper-pagination {
         bottom: auto !important;
         padding-block: 10px;
@@ -738,14 +713,11 @@ footer p {
     .swiper .swiper-wrapper .swiper-slide .layer h2 {
         font-size: 25px;
     }
-
     .swiper .swiper-wrapper .swiper-slide .layer p {
         font-size: 18px;
     }
-
     .tab-content .program-card {
         margin-inline: 0;
-
         .card-header h2 {
             font-size: 20px;
         }
@@ -756,11 +728,9 @@ footer p {
     .swiper .swiper-wrapper .swiper-slide .layer h2 {
         font-size: 25px;
     }
-
     .swiper .swiper-wrapper .swiper-slide .layer p {
         font-size: 18px;
     }
-
     .navbar-nav .nav-link,
     .dropdown-item {
         font-size: 17px;
@@ -773,7 +743,6 @@ footer p {
             max-width: 1330px !important;
         }
     }
-
     .news {
         & .container {
             max-width: 1110px !important;
@@ -788,68 +757,53 @@ footer p {
     body {
         padding: 0;
     }
-
     .swiper .swiper-wrapper .swiper-slide .layer {
         width: 70%;
     }
-
     .swiper .swiper-wrapper .swiper-slide .layer h2 {
         font-size: 23px;
     }
-
     .swiper .swiper-wrapper .swiper-slide .layer p {
         font-size: 16px;
     }
-
     nav ul.navbar-nav {
         width: 100%;
         justify-content: space-around;
         align-items: start;
     }
-
     nav .nav-item .sRow {
         display: none;
     }
-
     .contact .image {
         width: 80px;
     }
-
     .programs,
     .news {
         padding-inline: 10px;
     }
-
     .layer-title .content {
         padding: 20px 20px 0;
-
         &::after {
             width: 100%;
         }
     }
-
     .tab-content .program-card {
         margin-inline: 0;
         padding: 7px;
-
         & img {
             object-fit: scale-down;
             transform: scale(0.9, 0.9);
         }
-
         & .card-header h2 {
             font-size: 14px;
         }
-
         & p {
             font-size: 12px;
         }
     }
-
     .p-inline-35 {
         padding-inline: 0px;
     }
-
     .partners-swiper {
         & img {
             width: 80%;
@@ -865,41 +819,33 @@ footer p {
         width: 100%;
         right: 0;
     }
-
     .home-btn {
         padding: 5px 60px;
     }
-
     .tab-content .program-card {
         margin-inline: 0;
         padding: 7px;
         margin-block: 10px;
-
         & img {
             object-fit: scale-down;
         }
     }
-
     .program-layer {
         height: 100%;
     }
-
     .p-inline-35 {
         padding-inline: 0px;
     }
-
     .news-card {
         padding: 7px;
         margin-block: 10px;
         /* width: 310px; */
     }
-
     .partners-swiper {
         & img {
             width: 80%;
         }
     }
-
     .contact-apps {
         flex-direction: column;
     }
@@ -912,7 +858,6 @@ footer p {
     .contact .smallWidth {
         width: 50%;
     }
-
     .partners-swiper {
         & img {
             width: 80%;
@@ -927,19 +872,15 @@ footer p {
     .swiper .swiper-wrapper .swiper-slide .layer h2 {
         font-size: 14px;
     }
-
     .swiper .swiper-wrapper .swiper-slide .layer p {
         font-size: 10px;
     }
-
     .home-btn {
         padding: 5px 30px;
     }
-
     .contact ul li {
         font-size: 14px;
     }
-
     .partners-swiper {
         & img {
             width: 80%;
