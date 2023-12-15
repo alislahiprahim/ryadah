@@ -4,6 +4,7 @@ function initSwipers() {
   const swiper = new Swiper(".swiper", {
     // Optional parameters
     direction: "horizontal",
+    simulateTouch: true,
     loop: true,
     // If we need pagination
     pagination: {
@@ -18,6 +19,7 @@ function initSwipers() {
   const programSwiper = new Swiper(".program-swiper", {
     // Optional parameters
     direction: "horizontal",
+    simulateTouch: true,
     loop: true,
     // If we need pagination
     pagination: {
@@ -29,6 +31,7 @@ function initSwipers() {
   const newsSwiper = new Swiper(".news-swiper", {
     // Optional parameters
     direction: "horizontal",
+    simulateTouch: true,
     loop: true,
     // If we need pagination
     pagination: {
@@ -36,11 +39,32 @@ function initSwipers() {
       clickable: true,
     },
   });
+}
 
+function handlePartnerOnResize(partnersSwiper) {
+  if (window.innerWidth > 997 && partnersSwiper.enabled) {
+    document.querySelector(".partners-swiper").classList.add("d-none");
+    document.querySelector(".partners-swiper").classList.remove("d-flex");
+    document.querySelector(".partner-swiper-disabled").classList.add("d-flex");
+    document
+      .querySelector(".partner-swiper-disabled")
+      .classList.remove("d-none");
+  } else if (window.innerWidth < 997 && partnersSwiper.enabled) {
+    document.querySelector(".partners-swiper").classList.add("d-flex");
+    document.querySelector(".partners-swiper").classList.remove("d-none");
+    document.querySelector(".partner-swiper-disabled").classList.add("d-none");
+    document
+      .querySelector(".partner-swiper-disabled")
+      .classList.remove("d-flex");
+  }
+}
+
+function initPartnerSwiper() {
   const partnersSwiper = new Swiper(".partners-swiper", {
     // Optional parameters
     direction: "horizontal",
     loop: true,
+    simulateTouch: true,
     slidesPerView: 4,
     autoplay: {
       delay: 2000,
@@ -67,13 +91,12 @@ function initSwipers() {
         spaceBetween: 40,
       },
     },
-    // pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    // },
+  });
+  this.handlePartnerOnResize(partnersSwiper);
+  window.addEventListener("resize", () => {
+    this.handlePartnerOnResize(partnersSwiper);
   });
 }
-
 // Function to be executed when the target element comes into view
 function onEntry(entry) {
   entry.forEach((change) => {
@@ -129,4 +152,5 @@ function scrollTop() {
 document.addEventListener("DOMContentLoaded", function () {
   if (window.location.href.includes("index")) initSwipers();
   scrollTop();
+  initPartnerSwiper();
 });
