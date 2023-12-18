@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <g id="locations-icon" transform="translate(-1589 -1167)">
+    <g id="Icon_feather-map-pin" data-name="Icon feather-map-pin" transform="translate(1592.5 1172.5)">
+      <path id="Path_4439" data-name="Path 4439" d="M16.711,7.605c0,4.749-6.105,8.819-6.105,8.819S4.5,12.354,4.5,7.605a6.105,6.105,0,1,1,12.211,0Z" transform="translate(0 0)" fill="none" stroke="#006fb0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_4440" data-name="Path 4440" d="M17.57,12.535A2.035,2.035,0,1,1,15.535,10.5,2.035,2.035,0,0,1,17.57,12.535Z" transform="translate(-4.93 -4.93)" fill="none" stroke="#006fb0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+    <g id="Ellipse_30" data-name="Ellipse 30" transform="translate(1589 1167)" fill="none" stroke="#006fb0" stroke-width="1">
+      <circle cx="14" cy="14" r="14" stroke="none"/>
+      <circle cx="14" cy="14" r="13.5" fill="none"/>
+    </g>
+  </g>
+</svg>

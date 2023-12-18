@@ -133,17 +133,17 @@ li.nav-item .sRow {
     border: none;
 }
 
-.dropdown-toggle span i {
-    font-size: 11px;
-    transition: 0.5s transform;
+.dropdown-toggle i::before {
+    font-size: 12px;
+    transition: all 0.2s ease-in-out;
 }
 
-.navbar-nav .nav-link[aria-expanded="true"] i {
+.navbar-nav .nav-link[aria-expanded="true"] i::before {
     transform-origin: 60% 40%;
     transform: rotate(180deg);
 }
 
-.navbar-nav .nav-link[aria-expanded="false"] i {
+.navbar-nav .nav-link[aria-expanded="false"] i::before {
     transform-origin: 60% 40%;
     transform: rotate(0deg);
 }
@@ -218,20 +218,20 @@ footer {
     background-color: var(--main-color);
     border-radius: 50%;
     transition: color 0.2s ease-in-out;
+    &:hover {
+        background-color: #fff;
+        color: var(--main-color);
+        border: 1px solid var(--main-color);
+        & a {
+            color: var(--main-color);
+        }
+    }
 }
 
 .contact .links a {
     color: #fff;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
-}
-
-.links:hover {
-    background-color: #fff;
-    border: 1px solid var(--main-color);
-    a {
-        color: var(--main-color);
-    }
 }
 
 
@@ -276,5 +276,13 @@ footer p {
         font-weight: 500;
         text-decoration: none;
         color: #fff;
+    }
+}
+
+@media(max-width :575.98px) {
+    .contact {
+        & .stores {
+            height: 35%;
+        }
     }
 }

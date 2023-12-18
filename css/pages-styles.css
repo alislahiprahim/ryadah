@@ -1,3 +1,11 @@
+.rtl {
+    direction: rtl;
+}
+
+.ltr {
+    direction: ltr;
+}
+
 .page-header {
     position: relative;
 }
@@ -13,13 +21,13 @@
     background-repeat: no-repeat;
     position: relative;
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: 0;
         width: 100%;
         height: 33%;
         background: rgb(255, 255, 255);
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.6867121848739496) 100%);
+        background: linear-gradient( 180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.6867121848739496) 100%);
     }
 }
 
@@ -38,7 +46,8 @@
 
 .page-header .image p {
     color: #fff;
-    font-size: 36px;
+    font-size: 30px;
+    /*36px*/
     font-weight: 600;
     position: absolute;
     top: 52%;
@@ -51,7 +60,8 @@
     border-radius: 25px;
 }
 
-.main .logo {
+
+/* .main .logo {
     background-color: #F5F9FC;
     border-radius: 25px;
     background-image: url(../images/overview/riyadah-footer.svg);
@@ -61,11 +71,386 @@
     max-height: 200px;
     height: 200px;
     width: 85%;
-}
+} */
 
 .main .caption p {
-    color: #717D85;
-    font-size: 16px;
+    color: #717d85;
+    font-size: 18px;
+    line-height: 1.4rem;
+}
+
+.pages-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & .card-img {
+        background-color: #f5f9fc;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 120px;
+        & img {
+            width: inherit;
+            object-fit: contain;
+        }
+    }
+}
+
+
+/* .main .container {
+    width: 80%;
+    box-shadow: 0 0 50px #00000029;
+    border-radius: 35px;
+  }
+  .main .logo {
+    background-color: #f5f9fc;
+    border-radius: 18px;
+  }
+  .main .caption p {
+    color: #717d85;
+    font-size: 22px;
+  } */
+
+.main .caption h2 {
+    color: #026bb7;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+
+/* goals */
+
+.main .goals h2 {
+    margin-right: 11%;
+    color: #026bb7;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.main .goals ul {
+    padding: 15px;
+    color: #717d85;
+}
+
+.main .goals ul li {
+    margin: 8px;
+}
+
+.main .goals ul i {
+    color: #b09d6d;
+}
+
+
+/* end goals */
+
+
+/* our paterns */
+
+.main .caption a.paterns-links {
+    color: #026bb7;
+}
+
+.main .paterns-logo {
+    width: 30%;
+}
+
+.main .paterns-logo img {
+    width: 100%;
+}
+
+
+/* end our paterns*/
+
+.main .btnLeft {
+    direction: ltr;
+}
+
+.main button.btn-programs {
+    border: 2px solid #006fb0;
+    padding: 5px 20px;
+    border-radius: 15px;
+    direction: rtl;
+}
+
+.main button.btn-programs a {
+    text-decoration: none;
+    color: #006fb0;
+}
+
+
+/* start our programs*/
+
+
+/* end our programs*/
+
+
+/* start apply */
+
+.main .goals .content i {
+    color: #b09d6d;
+}
+
+.main .goals .content span {
+    color: #717d85;
+    font-size: 18px;
+}
+
+.programApply {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #f6f9fc;
+    border: 1px solid #eff2f3;
+    border-radius: 20px;
+}
+
+.programApply .active {
+    background-color: #026bb7;
+    color: #fff;
+    border: 2px solid #026bb7;
+}
+
+.inner {
+    border-radius: 15px;
+    color: #000;
+    font-size: 20px;
+}
+
+
+/* end apply */
+
+
+/* start news */
+
+.main .counterPage {
+    border: 1px solid #a2b3be;
+    border-radius: 15px;
+    width: 350px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.main .counterPage .last {
+    background-color: #a2b3be;
+}
+
+.main .counterPage .active {
+    background-color: #006fb0;
+}
+
+.main .counterPage div:not(.next) {
+    border-left: 1px solid #a2b3be;
+}
+
+.main .counterPage a {
+    color: #717d85;
+}
+
+.main .counterPage .last a {
+    color: #ebebeb;
+}
+
+.main .counterPage .active a {
+    color: #fff;
+}
+
+
+/* end news */
+
+
+/* start branches */
+
+.main .location {
+    margin-right: 11%;
+}
+
+.main .location label {
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.main .location select {
+    width: 200px;
+    color: #717d85;
+    border: #a2b3be 1px solid;
+    border-radius: 10px;
+    padding: 3px 5px;
+    outline-color: #026bb7;
+}
+
+.main .branche-container {
+    width: 80%;
+    margin: auto;
+}
+
+.main .card {
+    box-shadow: 0px 0px 50px #00000029;
+    border-radius: 28px;
+}
+
+.main .card img {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+
+.main .card h3 {
+    font-size: 24px;
+    color: #026bb7;
+    font-weight: bold;
+}
+
+.main .card ul li {
+    line-height: 2.2;
+}
+
+.main .card ul li img {
+    margin-inline: 3px;
+    width: 20px;
+    height: 20px;
+}
+
+.main .card .ltr {
+    direction: ltr;
+}
+
+
+/* end branches */
+
+.main .card label {
+    width: 30%;
+    color: var(--text-color);
+}
+
+.main .card input,
+.main .card textarea {
+    caret-color: #1790e7;
+    border-radius: 10px;
+}
+
+
+/* rechapcha */
+
+
+/* .g-recaptcha {
+  margin-bottom: 20px;
+} */
+
+
+/* start media query */
+
+
+/* // X-Large devices (large desktops, less than 1400px) */
+
+
+/* @media (max-width: 1399.98px) {} */
+
+
+/* // Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {
+    /* header .layer {
+        font-size: 22px;
+    } */
+    /* header .image p {
+        font-size: 33px;
+    } */
+    /* .main .caption p {
+        font-size: 20px;
+    } */
+    /* our paterns */
+    .main .paterns-logo {
+        width: 300px;
+    }
+    .main a.paterns-links {
+        font-size: 18px;
+    }
+    /* news */
+    .main .news-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main .news-container .logo {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+
+/* // Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    header .layer {
+        font-size: 20px;
+        padding-block: 10px;
+    }
+    header .image p {
+        font-size: 30px;
+    }
+    .main .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* in goals page */
+    .main .container>ul {
+        flex-grow: 1;
+    }
+}
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    header .layer {
+        font-size: 17px;
+        padding-block: 10px;
+    }
+    header .image p {
+        font-size: 25px;
+    }
+    .main .caption p {
+        font-size: 16px;
+    }
+    .main .caption h2 {
+        font-size: 18px;
+    }
+    .main a.paterns-links {
+        font-size: 18px;
+    }
+    .main .card .feedbackDesc {
+        flex-wrap: wrap;
+    }
+    .main .card label {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* special screen  */
+
+@media (max-width: 400px) {
+    header .layer {
+        font-size: 16px;
+        padding-block: 5px;
+    }
+    header .image p {
+        font-size: 20px;
+    }
+    .main .caption p {
+        font-size: 14px;
+    }
+    .main a.paterns-links {
+        font-size: 15px;
+    }
+    .main .logo {
+        width: 90%;
+    }
+    /* news */
+    .main .counterPage {
+        width: 300px;
+    }
 }
 
 
@@ -189,3 +574,76 @@ footer p {
         font-size: 14px;
     }
 }
+
+.main .container {
+    width: 80%;
+    box-shadow: 0 0 50px #00000029;
+    border-radius: 35px;
+}
+
+.main .logo {
+    background-color: #f5f9fc;
+    border-radius: 18px;
+}
+
+
+/* .main .caption p {
+    color: #717d85;
+    font-size: 18px;
+} */
+
+
+/* .main .caption h2 {
+    color: #026bb7;
+    font-weight: bold;
+    font-size: 30px;
+} */
+
+
+/* goals */
+
+.main .goals h2 {
+    margin-right: 11%;
+    color: #026bb7;
+    font-weight: bold;
+}
+
+.main .goals ul {
+    padding: 15px;
+    color: #717d85;
+}
+
+.main .goals ul li {
+    margin: 8px;
+}
+
+.main .goals ul i {
+    color: #b09d6d;
+}
+
+
+/* end goals */
+
+
+/* start manager */
+
+.manager-card .card {
+    margin-block: 10px;
+    border-radius: 34px;
+    box-shadow: 0px 0px 50px #00000029;
+}
+
+.manager-card .card img {
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.manager-card .card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #026bb7;
+    padding-block: 5px;
+}
+
+
+/* end manager */
