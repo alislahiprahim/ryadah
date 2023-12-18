@@ -153,4 +153,9 @@ document.addEventListener("DOMContentLoaded", function () {
   if (window.location.href.includes("index")) initSwipers();
   scrollTop();
   initPartnerSwiper();
+  const loader = document.querySelector(".loader");
+  // Hide the loader once the content is fully loaded
+  window.onload = function () {
+    loader.style.display = "none";
+  };
 });
