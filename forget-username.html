@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroller">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riyadah | reset username</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/home/logo.svg" />
+    <meta property="og:url" content="https://www.rayiadah.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="rayiadah">
+    <meta property="og:image" itemprop="image" content="./images/home/logo.svg">
+    <meta property="og:description" content="rayiadah description">
+    <meta property="og:site_name" content="rayiadah">
+
+    <meta name="description" content="rayiadah description">
+
+    <meta name="twitter:title" content="ًrayiadah">
+    <meta name="twitter:description" content="rayiadah description">
+    <meta name="twitter:site" content="@rayiadah">
+    <meta name="twitter:creator" content="@rayiadah">
+
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/icons/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/pages-styles.css" />
+
+</head>
+
+<body>
+    <main>
+        <header id="navbar"></header>
+
+        <section class="page-header">
+            <div class="layer">
+                <p class="mb-0">
+                    <a href="./index.html" class="text-decoration-none text-white">الرئيسية</a> > الدخول الى حسابك
+                </p>
+            </div>
+            <div class="image" style="background-image: url(./images/Login-banner.png)">
+                <p>الدخول الى حسابك</p>
+            </div>
+        </section>
+
+        <!--start main -->
+
+        <section class="login-card my-5 d-flex align-items-center justify-content-center">
+            <div class="card mb-3 w-100">
+                <div class="row g-0">
+                    <div class="col-md-4 d-flex align-items-center justify-content-center">
+                        <img src="./images/riyadah-footer.svg" alt="riyada logo">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <form>
+                                <div class="row mb-3">
+                                    <label for="nationalId" class="col-sm-4 col-form-label">رقم الهوية الوطنية</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="nationalId">
+
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="mobile" class="col-sm-4 col-form-label">رقم الجوال</label>
+                                    <div class="col-sm-8">
+                                        <input type="number" class="form-control" id="mobile">
+
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-end gap-2">
+                                    <a class="text-decoration-none" href="login.html">
+                                        <button type="button" class="btn btn-primary px-4">ارسال</button>
+                                    </a>
+                                    <a class="text-decoration-none" href="login.html">
+                                        <button type="button" class="btn btn-outline-primary">تسجيل دخول</button>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <footer id="footer"></footer>
+
+        <div class="scroll-top" id="scroll-top">
+            <a href="#"><i class="bi bi-chevron-double-up" aria-hidden="true"></i>
+<i class="bi bi-chevron-up" aria-hidden="true"></i></a>
+        </div>
+    </main>
+    <script>
+        // Fetch and insert navbar
+        fetch("./layout/navbar.html")
+            .then((response) => response.text())
+            .then((data) => (document.getElementById("navbar").innerHTML = data));
+
+        // Fetch and insert footer
+        fetch("./layout/footer.html")
+            .then((response) => response.text())
+            .then((data) => (document.getElementById("footer").innerHTML = data));
+    </script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
