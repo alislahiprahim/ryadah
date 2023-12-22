@@ -151,11 +151,12 @@ function scrollTop() {
 
 document.addEventListener("DOMContentLoaded", function() {
     if (
-        window.location.pathname.includes("index") ||
-        window.location.pathname == "/"
+      window.location.pathname.includes("index") ||
+      window.location.pathname == "/" ||
+      window.location.pathname == "/ryadah/"
     ) {
-        initSwipers();
-        initPartnerSwiper();
+      initSwipers();
+      initPartnerSwiper();
     }
     scrollTop();
     const loader = document.querySelector(".loader");
