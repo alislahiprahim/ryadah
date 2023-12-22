@@ -57,7 +57,7 @@
 .main .container {
     width: 85%;
     box-shadow: 0 0 50px #00000029;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 
@@ -116,7 +116,7 @@
 .main .container {
     width: 80%;
     box-shadow: 0 0 50px #00000029;
-    border-radius: 35px;
+    border-radius: 10px;
 }
 
 .main .logo {
