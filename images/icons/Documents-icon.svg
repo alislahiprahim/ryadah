@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2681" data-name="Rectangle 2681" width="32" height="32" transform="translate(1708 778)" fill="#f5f9fc" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Documents-icon" transform="translate(-1708 -772)">
+    <g id="Mask_Group_39" data-name="Mask Group 39" transform="translate(0 -6)" clip-path="url(#clip-path)">
+      <g id="copy" transform="translate(1708 778)">
+        <path id="Path_4702" data-name="Path 4702" d="M26.072,0H10.283A3.1,3.1,0,0,0,7.106,3V4H4.922A2.174,2.174,0,0,0,2.75,6.172V29.828A2.174,2.174,0,0,0,4.922,32h17.8a2.174,2.174,0,0,0,2.172-2.172V28h1.178a3.1,3.1,0,0,0,3.178-3V3A3.1,3.1,0,0,0,26.072,0ZM22.894,29.828a.172.172,0,0,1-.172.172H4.922a.172.172,0,0,1-.172-.172V6.172A.172.172,0,0,1,4.922,6h17.8a.172.172,0,0,1,.172.172ZM27.25,25a1.1,1.1,0,0,1-1.178,1H24.894V6.172A2.174,2.174,0,0,0,22.723,4H9.106V3a1.1,1.1,0,0,1,1.178-1H26.072A1.1,1.1,0,0,1,27.25,3Z" fill="#f5f9fc"/>
+        <path id="Path_4703" data-name="Path 4703" d="M18.75,13.5H9.25a1,1,0,0,1,0-2h9.5a1,1,0,0,1,0,2Z" fill="#f5f9fc"/>
+        <path id="Path_4704" data-name="Path 4704" d="M18.75,17.5H9.25a1,1,0,0,1,0-2h9.5a1,1,0,0,1,0,2Z" fill="#f5f9fc"/>
+        <path id="Path_4705" data-name="Path 4705" d="M18.75,21.5H9.25a1,1,0,0,1,0-2h9.5a1,1,0,0,1,0,2Z" fill="#f5f9fc"/>
+      </g>
+    </g>
+  </g>
+</svg>
