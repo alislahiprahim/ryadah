@@ -1,184 +1,108 @@
-const numbers = [18939, 44137, 44137, 44137, 48418];
 
-function initSwipers() {
-    const swiper = new Swiper(".swiper", {
-        // Optional parameters
-        direction: "horizontal",
-        simulateTouch: true,
-        loop: true,
-        // If we need pagination
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        autoplay: {
-            delay: 5000,
-        },
-    });
-
-    const programSwiper = new Swiper(".program-swiper", {
-        // Optional parameters
-        direction: "horizontal",
-        simulateTouch: true,
-        loop: true,
-        // If we need pagination
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-
-    const newsSwiper = new Swiper(".news-swiper", {
-        // Optional parameters
-        direction: "horizontal",
-        simulateTouch: true,
-        loop: true,
-        // If we need pagination
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-}
-
-function handlePartnerOnResize(partnersSwiper) {
-    if (window.innerWidth > 997 && partnersSwiper.enabled) {
-        document.querySelector(".partners-swiper").classList.add("d-none");
-        document.querySelector(".partners-swiper").classList.remove("d-flex");
-        document.querySelector(".partner-swiper-disabled").classList.add("d-flex");
-        document
-            .querySelector(".partner-swiper-disabled")
-            .classList.remove("d-none");
-    } else if (window.innerWidth < 997 && partnersSwiper.enabled) {
-        document.querySelector(".partners-swiper").classList.add("d-flex");
-        document.querySelector(".partners-swiper").classList.remove("d-none");
-        document.querySelector(".partner-swiper-disabled").classList.add("d-none");
-        document
-            .querySelector(".partner-swiper-disabled")
-            .classList.remove("d-flex");
+function scroll_to_class(element_class, removed_height) {
+    var scroll_to = $(element_class).offset().top - removed_height;
+    if ($(window).scrollTop() != scroll_to) {
+        $('html, body').stop().animate({ scrollTop: scroll_to }, 0);
     }
 }
 
-function initPartnerSwiper() {
-    const partnersSwiper = new Swiper(".partners-swiper", {
-        // Optional parameters
-        direction: "horizontal",
-        loop: true,
-        simulateTouch: true,
-        slidesPerView: 4,
-        autoplay: {
-            delay: 2000,
-        },
-        breakpoints: {
-            // when window width is >= 320px
-            220: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
-            // when window width is >= 320px
-            320: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
-            // when window width is >= 480px
-            480: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-            },
-            // when window width is >= 640px
-            640: {
-                slidesPerView: 4,
-                spaceBetween: 40,
-            },
-        },
-    });
-    this.handlePartnerOnResize(partnersSwiper);
-    window.addEventListener("resize", () => {
-        this.handlePartnerOnResize(partnersSwiper);
-    });
-}
-// Function to be executed when the target element comes into view
-function onEntry(entry) {
-    entry.forEach((change) => {
-        if (change.isIntersecting) {
-            // Do something when the target element is in view
-            // Replace this with your desired action
-            console.log("Target element is now visible");
-            document.querySelector("#number-wrapper").classList.remove("d-none");
-            // Run your JS script here
-            odometer1.innerHTML = numbers[0];
-            odometer2.innerHTML = numbers[1];
-            odometer3.innerHTML = numbers[2];
-            odometer4.innerHTML = numbers[3];
-            odometer5.innerHTML = numbers[4];
-        }
-    });
-}
-
-// Create an intersection observer instance
-const observer = new IntersectionObserver(onEntry, {
-    root: null, // Use the viewport as the root
-    rootMargin: "0px", // No margin
-    threshold: 0.5, // 0-1, percentage of the element's visibility required to trigger the callback
-});
-
-// Get the target element
-const target = document.querySelector("#numbers");
-
-// Start observing the target element
-if (target) {
-    observer.observe(target);
-}
-
-function scrollTop() {
-    window.addEventListener("scroll", function() {
-        const scrollToTop = document.getElementById("scroll-top");
-        if (
-            document.body.scrollTop > 200 ||
-            document.documentElement.scrollTop > 200
-        ) {
-            scrollToTop.style.display = "flex";
-        } else {
-            scrollToTop.style.display = "none";
-        }
-    });
-
-    document.getElementById("scroll-top").addEventListener("click", function() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    });
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-    if (
-      window.location.pathname.includes("index") ||
-      window.location.pathname == "/" ||
-      window.location.pathname == "/ryadah/"
-    ) {
-      initSwipers();
-      initPartnerSwiper();
+function bar_progress(progress_line_object, direction) {
+    var number_of_steps = progress_line_object.data('number-of-steps');
+    var now_value = progress_line_object.data('now-value');
+    var new_value = 0;
+    if (direction == 'right') {
+        new_value = now_value + (100 / number_of_steps);
     }
-    scrollTop();
+    else if (direction == 'left') {
+        new_value = now_value - (100 / number_of_steps);
+    }
+    progress_line_object.attr('style', 'width: ' + new_value + '%;').data('now-value', new_value);
+}
+
+jQuery(document).ready(function () {
     const loader = document.querySelector(".loader");
     // Hide the loader once the content is fully loaded
-    window.onload = function() {
+    window.onload = function () {
         loader.style.display = "none";
     };
+    /*
+        Form
+    */
+    $('.f1 fieldset:first').fadeIn('fast');
 
-    activateCurrentPath();
-});
+    // $('.f1 input[type="text"], .f1 input[type="password"], .f1 textarea').on('focus', function () {
+    //     $(this).removeClass('input-error');
+    // });
 
-function activateCurrentPath() {
-    const currentPath = window.location.pathname;
-    setTimeout(() => {
-        const navLinks = [
-            ...document.querySelectorAll(".navbar-nav .nav-link"),
-            ...document.querySelectorAll(".dropdown-menu .dropdown-item"),
-        ];
-        navLinks.forEach((link) => {
-            if (currentPath.includes(link.getAttribute("href"))) {
-                link.classList.add("active");
-            }
+    // next step
+    $('.f1 .btn-next').on('click', function () {
+        var parent_fieldset = $(this).parents('fieldset');
+        var next_step = true;
+        // navigation steps / progress steps
+        var current_active_step = $(this).parents('.f1').find('.f1-step.active');
+        var progress_line = $(this).parents('.f1').find('.f1-progress-line');
+
+        // fields validation
+        // parent_fieldset.find('input[type="text"], input[type="password"], textarea').each(function () {
+        //     if ($(this).val() == "") {
+        //         $(this).addClass('input-error');
+        //         next_step = false;
+        //     }
+        //     else {
+        //         $(this).removeClass('input-error');
+        //     }
+        // });
+        // fields validation
+
+        if (next_step) {
+            parent_fieldset.fadeOut(400, function () {
+                // change icons
+                current_active_step.removeClass('active').addClass('activated').next().addClass('active');
+                // progress bar
+                bar_progress(progress_line, 'right');
+                // show next step
+                $(this).next().fadeIn('fast');
+                // scroll window to beginning of the form
+                scroll_to_class($('.f1'), 20);
+            });
+        }
+
+    });
+
+    // previous step
+    $('.f1 .btn-previous').on('click', function () {
+        // navigation steps / progress steps
+        var current_active_step = $(this).parents('.f1').find('.f1-step.active');
+        var progress_line = $(this).parents('.f1').find('.f1-progress-line');
+
+        $(this).parents('fieldset').fadeOut(400, function () {
+            // change icons
+            current_active_step.removeClass('active').prev().removeClass('activated').addClass('active');
+            // progress bar
+            bar_progress(progress_line, 'left');
+            // show previous step
+            $(this).prev().fadeIn();
+            // scroll window to beginning of the form
+            scroll_to_class($('.f1'), 20);
         });
-    }, 1);
-}
+    });
+
+    // submit
+    $('.f1').on('submit', function (e) {
+
+        // fields validation
+        // $(this).find('input[type="text"], input[type="password"], textarea').each(function () {
+        //     if ($(this).val() == "") {
+        //         e.preventDefault();
+        //         $(this).addClass('input-error');
+        //     }
+        //     else {
+        //         $(this).removeClass('input-error');
+        //     }
+        // });
+        // fields validation
+
+    });
+
+
+});
