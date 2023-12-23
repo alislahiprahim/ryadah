@@ -41,9 +41,8 @@
 }
 
 body {
-    max-width: 1440px;
     margin: auto !important;
-    padding: 0 3.429rem;
+    padding: 0;
     background-color: #EFF2F3;
     font-family: "Cairo";
 }
@@ -72,14 +71,6 @@ nav {
     background-color: #fff;
 }
 
-main {
-    /* background-color: #fff; */
-}
-
-nav.navbar {
-    direction: rtl;
-}
-
 nav a.navbar-brand .logo {
     height: 50px;
     padding-left: 5px;
@@ -93,14 +84,13 @@ nav a.navbar-brand .logo2030 {
 }
 
 nav ul.navbar-nav {
-    width: 70%;
     justify-content: space-around;
     align-items: center;
 }
 
 .navbar-nav .nav-link,
 .dropdown-item {
-    color: var(--link-color);
+    color: #fff;
     text-align: right;
     font-size: 18px;
 }
@@ -111,31 +101,7 @@ nav ul.navbar-nav {
 .dropdown-item:hover,
 .btn-nav a,
 li.nav-item .sRow {
-    color: var(--main-color);
-}
-
-.dropdown-menu {
-    border: none;
-}
-
-.dropdown-item.active {
-    &:visited {
-        color: #fff;
-    }
-}
-
-.dropdown-item:active {
     color: #fff;
-}
-
-.dropdown-toggle::after {
-    content: "";
-    border: none;
-}
-
-.dropdown-toggle i::before {
-    font-size: 12px;
-    transition: all 0.2s ease-in-out;
 }
 
 .navbar-nav .nav-link[aria-expanded="true"] i::before {
@@ -166,13 +132,15 @@ footer {
     background: transparent linear-gradient(180deg, #eef2f3 0%, #ffffff 100%);
 }
 
+
 /* start footer */
 
 footer p {
     color: var(--text-color);
     text-align: center;
     padding-block: 15px;
-    border-top: 1px solid var(--link-color);
+    border-top: 1px solid #fff;
+    margin-bottom: 0;
 }
 
 
@@ -210,7 +178,6 @@ footer p {
     -moz-box-shadow: 0px 0px 15px 0px rgba(29, 29, 29, 0.14);
     box-shadow: 0px 0px 15px 0px rgba(29, 29, 29, 0.14);
     z-index: 20;
-
     & a {
         font-size: 20px;
         font-weight: 500;
@@ -218,7 +185,6 @@ footer p {
         color: #fff;
         position: relative;
         padding-bottom: 2px;
-
         & .bi-chevron-up {
             position: absolute;
             top: 7px;

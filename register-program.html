@@ -35,190 +35,457 @@
 </head>
 
 <body>
-    <div class="loader"><img src="./images/home/riyadah-footer.svg" alt=""></div>
+    <div class="loader"><img src="./images/home/riyadah-footer.svg" alt></div>
     <main class="position-relative">
         <header id="navbar"></header>
-
         <div class="container">
+            <div class="row py-4">
+                <div class="col-12 d-flex justify-content-between">
+                    <p class="text-secondary"><i class="bi bi-house-door mx-1"></i><a class="text-secondary text-decoration-none" href="register-program.html">طلبات ريادي</a> > معلومات شخصية </p>
+                    <button class="btn btn-primary d-flex align-items-center">
+                        <i class="bi bi-plus fs-4"></i>
+                        طلب دعم مشروع جديد
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container px-4">
             <div class="row">
                 <div class="col-md-12">
                     <div class="d-flex align-items-center justify-content-center w-100">
                         <form role="form" class="f1 w-100">
                             <div class="f1-steps">
                                 <div class="f1-progress">
-                                    <div class="f1-progress-line" data-now-value="25" data-number-of-steps="6">
+                                    <!-- ratio = 100 / (no. of steps - 1) -->
+                                    <div class="f1-progress-line" data-ratio="20" data-number-of-steps="6">
                                     </div>
                                 </div>
                                 <div class="f1-step active">
-                                    <div class="f1-step-icon"><img src="./images/icons/avatar-id.svg" alt=""></div>
+                                    <div class="f1-step-icon"><img src="./images/icons/avatar-id.svg" alt></div>
                                     <p>البيانات الشخصية</p>
                                 </div>
                                 <div class="f1-step">
-                                    <div class="f1-step-icon"><img src="./images/icons/Request-data-icon.svg" alt=""></div>
+                                    <div class="f1-step-icon"><img src="./images/icons/Request-data-icon.svg" alt></div>
                                     <p>استمارة الطلب</p>
                                 </div>
                                 <div class="f1-step">
-                                    <div class="f1-step-icon"><img src="./images/icons/Project-form-icon.svg" alt=""></div>
+                                    <div class="f1-step-icon"><img src="./images/icons/Project-form-icon.svg" alt></div>
                                     <p>استمارة المشروع</p>
                                 </div>
                                 <div class="f1-step">
-                                    <div class="f1-step-icon"><img src="./images/icons/Project-elements-icon.svg" alt=""></div>
-                                    <p>عناصر المشروع</p>
+                                    <div class="f1-step-icon"><img src="./images/icons/Request-data-icon.svg" alt></div>
+                                    <p>استمارة الطلب</p>
                                 </div>
                                 <div class="f1-step">
-                                    <div class="f1-step-icon"><img src="./images/icons/Qualifications-icon.svg" alt=""></div>
-                                    <p>المؤهلات</p>
+                                    <div class="f1-step-icon"><img src="./images/icons/Project-form-icon.svg" alt></div>
+                                    <p>استمارة المشروع</p>
                                 </div>
                                 <div class="f1-step">
-                                    <div class="f1-step-icon"><img src="./images/icons/Guarantees-icon.svg" alt=""></div>
-                                    <p>الضمانات</p>
+                                    <div class="f1-step-icon"><img src="./images/icons/Request-data-icon.svg" alt></div>
+                                    <p>استمارة الطلب</p>
                                 </div>
+
                             </div>
 
-                            <fieldset>
+                            <fieldset data-step="1">
                                 <div class="row">
                                     <div class="col-12 mb-4">
                                         <h5>البيانات الشخصية</h5>
                                     </div>
                                     <div class="col-md-6 row mb-3">
-                                        <label for="username" class="col-sm-5 col-form-label"> الاسم الاول  *</label>
+                                        <label for="username" class="col-sm-5 col-form-label">
+                                                الاسم الاول </label>
                                         <div class="col-sm-7">
                                             <input disabled type="username" class="form-control" id="username">
                                         </div>
                                     </div>
                                     <div class="col-md-6 row mb-3">
-                                        <label for="fatherName" class="col-sm-5 col-form-label"> اسم الاب *</label>
+                                        <label for="fatherName" class="col-sm-5 col-form-label">
+                                                اسم الاب </label>
                                         <div class="col-sm-7">
                                             <input disabled type="text" class="form-control" id="fatherName">
                                         </div>
                                     </div>
                                     <div class="col-md-6 row mb-3">
-                                        <label for="grandName" class="col-sm-5 col-form-label"> اسم الجد *</label>
+                                        <label for="grandName" class="col-sm-5 col-form-label">
+                                                اسم الجد </label>
                                         <div class="col-sm-7">
                                             <input disabled type="text" class="form-control" id="grandName">
                                         </div>
                                     </div>
                                     <div class="col-md-6 row mb-3">
-                                        <label for="familyName" class="col-sm-5 col-form-label"> اسم العائلة  *</label>
+                                        <label for="familyName" class="col-sm-5 col-form-label">
+                                                اسم العائلة </label>
                                         <div class="col-sm-7">
                                             <input disabled type="text" class="form-control" id="familyName">
                                         </div>
                                     </div>
                                     <div class="col-md-6 row mb-3">
-                                        <label for="nationalId" class="col-sm-5 col-form-label"> رقم الهوية الوطنية *</label>
+                                        <label for="nationalId" class="col-sm-5 col-form-label">
+                                                رقم الهوية الوطنية </label>
                                         <div class="col-sm-7">
                                             <input disabled type="number" class="form-control" id="nationalId">
                                         </div>
                                     </div>
                                     <div class="col-md-6 row mb-3">
-                                        <label for="gender" class="col-sm-5 col-form-label"> الجنس *</label>
+                                        <label for="gender" class="col-sm-5 col-form-label">
+                                                الجنس </label>
                                         <div class="col-sm-7">
                                             <select class="form-control" id="gender">
-                              <option selected>اختر الجنس</option>
-                              <option value="1">ذكر</option>
-                              <option value="2">انثى</option>
-                          </select>
+                                                    <option selected>اختر
+                                                        الجنس</option>
+                                                    <option
+                                                        value="1">ذكر</option>
+                                                    <option
+                                                        value="2">انثى</option>
+                                                </select>
                                         </div>
                                     </div>
                                     <div class="col-md-6 row mb-3">
-                                        <label for="birthDate" class="col-sm-5 col-form-label"> تاريخ الميلاد  *</label>
+                                        <label for="birthDate" class="col-sm-5 col-form-label">
+                                                تاريخ الميلاد </label>
                                         <div class="col-sm-7">
                                             <input disabled type="date" class="form-control" id="birthDate">
                                         </div>
                                     </div>
                                     <div class="col-md-6 row mb-3">
-                                        <label for="city" class="col-sm-5 col-form-label"> مدينة الاقامة *</label>
+                                        <label for="city" class="col-sm-5 col-form-label">
+                                                مدينة الاقامة </label>
                                         <div class="col-sm-7">
                                             <select class="form-control" id="city">
-                              <option selected>اختر المدينة</option>
-                              <option value="1">مكة</option>
-                              <option value="2">المدينة</option>
-                          </select>
+                                                    <option selected>اختر
+                                                        المدينة</option>
+                                                    <option
+                                                        value="1">مكة</option>
+                                                    <option
+                                                        value="2">المدينة</option>
+                                                </select>
                                         </div>
                                     </div>
                                     <div class="col-md-6 row mb-3">
-                                        <label for="mobile" class="col-sm-5 col-form-label"> الجوال *</label>
+                                        <label for="mobile" class="col-sm-5 col-form-label">
+                                                الجوال </label>
                                         <div class="col-sm-7">
                                             <input disabled type="number" class="form-control" id="mobile">
                                         </div>
                                     </div>
                                     <div class="col-md-6 row mb-3">
-                                        <label for="email" class="col-sm-5 col-form-label"> البريد الالكتروني *</label>
+                                        <label for="email" class="col-sm-5 col-form-label">
+                                                البريد الالكتروني </label>
                                         <div class="col-sm-7">
                                             <input disabled type="email" class="form-control" id="email">
                                         </div>
                                     </div>
                                     <div class="col-md-6 row mb-3">
-                                        <label for="nationalIdExpiration" class="col-sm-5 col-form-label"> تاريخ انتهاء
-                          الهوية *</label>
+                                        <label for="nationalIdExpiration" class="col-sm-5 col-form-label">
+                                                تاريخ انتهاء
+                                                الهوية </label>
                                         <div class="col-sm-7">
                                             <input disabled type="date" class="form-control" id="nationalIdExpiration">
                                         </div>
                                     </div>
+
+                                </div>
+                                <div class="row my-4">
                                     <div class="col-md-12 d-flex align-items-center justify-content-center gap-2">
-                                        <button id="btn-next" type="button" class="btn btn-primary px-4">حفظ والتالي</button>
+                                        <button id="btn-next" type="button" class="btn btn-primary px-4">حفظ
+                                                والتالي</button>
                                         <button type="button" class="btn btn-outline-secondary">الغاء</button>
                                     </div>
                                 </div>
 
                             </fieldset>
 
-                            <fieldset>
-                                <h4>Set up your account:</h4>
-                                <div class="form-group">
-                                    <label class="sr-only" for="f1-email">Email</label>
-                                    <input disabled type="text" name="f1-email" placeholder="Email..." class="f1-email form-control" id="f1-email">
+                            <fieldset data-step="2">
+                                <div class="row">
+                                    <div class="col-12 mb-4">
+                                        <h5>استمارة الطلب</h5>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="orderNumber" class="col-sm-5 col-form-label">
+                                                رقم الطلب </label>
+                                        <div class="col-sm-7">
+                                            <input type="number" class="form-control" id="orderNumber">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="name" class="col-sm-5 col-form-label">
+                                                الاسم </label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="prjectType" class="col-sm-5 col-form-label">
+                                                نوع مشروع الدعم </label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="prjectType">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="program" class="col-sm-5 col-form-label">
+                                                البرنامج </label>
+                                        <div class="col-sm-7">
+                                            <select class="form-control" id="program">
+                                                    <option selected>اختر
+                                                        برنامج</option>
+                                                    <option value="1">برنامج
+                                                        انطلاقة</option>
+                                                    <option value="2">برنامج
+                                                        انطلاقة 2</option>
+                                                </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="city" class="col-sm-5 col-form-label">
+                                                مدينة المشروع المبدئية </label>
+                                        <div class="col-sm-7">
+                                            <select class="form-control" id="city">
+                                                    <option selected>اختر
+                                                        المدينة</option>
+                                                    <option
+                                                        value="1">مكة</option>
+                                                    <option
+                                                        value="2">المدينة</option>
+                                                </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="studio" class="col-sm-5 col-form-label">
+                                                نوع النشاط </label>
+                                        <div class="col-sm-7">
+                                            <select class="form-control" id="studio">
+                                                    <option selected>اختر
+                                                        نشاط</option>
+                                                    <option value="1">استديو
+                                                        تصوير</option>
+                                                    <option
+                                                        value="2">جراج</option>
+                                                </select>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label class="sr-only" for="f1-password">Password</label>
-                                    <input type="password" name="f1-password" placeholder="Password..." class="f1-password form-control" id="f1-password">
-                                </div>
-                                <div class="form-group">
-                                    <label class="sr-only" for="f1-repeat-password">Repeat password</label>
-                                    <input type="password" name="f1-repeat-password" placeholder="Repeat password..." class="f1-repeat-password form-control" id="f1-repeat-password">
-                                </div>
-                                <div class="f1-buttons">
-                                    <button type="button" class="btn btn-previous">Previous</button>
-                                    <button type="button" class="btn btn-next">Next</button>
+                                <div class="row my-4">
+                                    <div class="col-md-12 d-flex align-items-center justify-content-center gap-2">
+                                        <button id="btn-next" type="button" class="btn btn-primary px-4">حفظ
+                                                والتالي</button>
+                                        <button type="button" class="btn btn-outline-secondary">الغاء</button>
+                                    </div>
                                 </div>
                             </fieldset>
 
-                            <fieldset>
-                                <h4>Social media profiles:</h4>
-                                <div class="form-group">
-                                    <label class="sr-only" for="f1-facebook">Facebook</label>
-                                    <input type="text" name="f1-facebook" placeholder="Facebook..." class="f1-facebook form-control" id="f1-facebook">
+                            <fieldset data-step="3">
+                                <div class="row">
+                                    <div class="col-12 mb-4">
+                                        <h5>استمارة المشروع</h5>
+                                    </div>
+                                    <div class="col-md-12 row mb-3">
+                                        <label for="description" class="col-sm-2 col-form-label">
+                                                وصف المشروع </label>
+                                        <div class="col-sm-10 text-area">
+                                            <textarea class="form-control" id="description" rows="3" cols="50"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="commercialId" class="col-sm-5 col-form-label">
+                                                رقم السجل التجاري </label>
+                                        <div class="col-sm-7">
+                                            <input type="number" class="form-control" id="commercialId">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="commpercialIdDate" class="col-sm-5 col-form-label">
+                                                تاريخ اصدار السجل التجاري
+                                            </label>
+                                        <div class="col-sm-7">
+                                            <input type="date" class="form-control" id="commpercialIdDate">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="facilityType" class="col-sm-5 col-form-label">
+                                                نوع المنشأة </label>
+                                        <div class="col-sm-7">
+                                            <select class="form-control" id="facilityType">
+                                                    <option selected>اختر نوع
+                                                        المنشأة</option>
+                                                    <option value="1">مؤسسة
+                                                        فردية</option>
+                                                    <option value="2">مؤسسة
+                                                        فردية 2</option>
+                                                </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="partnerNumber" class="col-sm-5 col-form-label">
+                                                عدد الشركاء (ان وجد)
+                                            </label>
+                                        <div class="col-sm-7">
+                                            <input type="number" class="form-control" id="partnerNumber">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="facilityFinance" class="col-sm-5 col-form-label">
+                                            إيرادات المنشاة لآخر سنة مالية
+                                        </label>
+                                        <div class="col-sm-7 d-flex align-items-center justify-content-start gap-1">
+                                            <input type="number" class="form-control" id="facilityFinance">
+                                            <span class="text-secondary">ريال</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="facilityExpenses" class="col-sm-5 col-form-label">
+                                            مصروفات المنشاة لآخر سنة مالية                                            
+                                        </label>
+                                        <div class="col-sm-7 d-flex align-items-center justify-content-start gap-1">
+                                            <input type="number" class="form-control" id="facilityExpenses">
+                                            <span class="text-secondary">ريال</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="enableEdit" class="col-sm-5 col-form-label">
+                                            مسموح بالتعديل
+                                        </label>
+                                        <div class="col-sm-7 d-flex align-items-end justify-content-start">
+                                            <div class="form-check form-switch ">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label class="sr-only" for="f1-twitter">Twitter</label>
-                                    <input type="text" name="f1-twitter" placeholder="Twitter..." class="f1-twitter form-control" id="f1-twitter">
-                                </div>
-                                <div class="form-group">
-                                    <label class="sr-only" for="f1-google-plus">Google plus</label>
-                                    <input type="text" name="f1-google-plus" placeholder="Google plus..." class="f1-google-plus form-control" id="f1-google-plus">
-                                </div>
-                                <div class="f1-buttons">
-                                    <button type="button" class="btn btn-previous">Previous</button>
-                                    <button type="button" class="btn btn-next">Next</button>
+                                <div class="row my-4">
+                                    <div class="col-md-12 d-flex align-items-center justify-content-center gap-2">
+                                        <button id="btn-next" type="button" class="btn btn-primary px-4">حفظ
+                                                والتالي</button>
+                                        <button type="button" class="btn btn-outline-secondary">الغاء</button>
+                                    </div>
                                 </div>
                             </fieldset>
-                            <fieldset>
-                                <h4>Social media profiles:</h4>
-                                <div class="form-group">
-                                    <label class="sr-only" for="f1-facebook">Facebook</label>
-                                    <input type="text" name="f1-facebook" placeholder="Facebook..." class="f1-facebook form-control" id="f1-facebook">
+                            <fieldset data-step="4">
+                                <div class="row">
+                                    <div class="col-12 mb-4">
+                                        <h5>عناصر المشروع </h5>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="alert alert-primary d-flex align-items-start justify-content-start gap-2">
+                                            <i class="bi bi-info-circle text-primary"></i>
+                                            <div>
+                                                <p class="text-primary">مبلغ القرض المطلوب : 1000200 </p>
+                                                <br>
+                                                <p class="text-primary">يتم توزيع مبلغ التمويل المطلوب على عناصر المشروع ادناه حسب احتياج المشروع ( لا مانع من تركيزها على عنصر واحد )</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <div class="col-sm-5">
+                                            <label for="username" class=" col-form-label">
+                                                مصاريف التأسيس 
+                                            </label>
+                                            <br>
+                                            <small class="text-secondary">وتشمل اعداد الدراسات والرسوم للجهات ذات العلاقة</small>
+                                        </div>
+                                        <div class="col-sm-7">
+                                            <input type="foundationExpenses" class="form-control" id="foundationExpenses">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="fatherName" class="col-sm-5 col-form-label">
+                                            المواد الخام </label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="fatherName">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="grandName" class="col-sm-5 col-form-label">
+                                            تكاليف مخططات الابنية للموقع </label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="grandName">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="familyName" class="col-sm-5 col-form-label">
+                                            البضاعة   </label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="familyName">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="familyName" class="col-sm-5 col-form-label">
+                                            التسويق   </label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="familyName">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="nationalId" class="col-sm-5 col-form-label">
+                                            تكاليف ايصال الكهرباء والماء والهاتف     </label>
+                                        <div class="col-sm-7">
+                                            <input type="number" class="form-control" id="nationalId">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <div class="col-md-5">
+                                            <label for="nationalId" class=" col-form-label">
+                                                تكلفة الموارد البشرية   </label>
+                                            <small class="text-secondary">(رواتب، استقدام، الخ…)</small>
+                                        </div>
+                                        <div class="col-sm-7">
+                                            <input type="number" class="form-control" id="nationalId">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="nationalId" class="col-sm-5 col-form-label">
+                                            المواد المستهلكة    </label>
+                                        <div class="col-sm-7">
+                                            <input type="number" class="form-control" id="nationalId">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="nationalId" class="col-sm-5 col-form-label">
+                                            الآلات والمعدات   </label>
+                                        <div class="col-sm-7">
+                                            <input type="number" class="form-control" id="nationalId">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="nationalId" class="col-sm-5 col-form-label">
+                                            الإيجارات  </label>
+                                        <div class="col-sm-7">
+                                            <input type="number" class="form-control" id="nationalId">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="nationalId" class="col-sm-5 col-form-label">
+                                            الاثاث والديكور </label>
+                                        <div class="col-sm-7">
+                                            <input type="number" class="form-control" id="nationalId">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <label for="nationalId" class="col-sm-5 col-form-label">
+                                            السيارات والنقل </label>
+                                        <div class="col-sm-7">
+                                            <input type="number" class="form-control" id="nationalId">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 row mb-3">
+                                        <div class="col-md-5">
+                                            <label for="nationalId" class="col-form-label">
+                                                المساهمة الذاتية</label>
+                                            <small class="text-secondary">(على الا تقل عن 10% من التكلفة الاجمالية للتمويل)</small>
+                                        </div>
+                                        <div class="col-sm-7">
+                                            <input type="number" class="form-control" id="nationalId">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label class="sr-only" for="f1-twitter">Twitter</label>
-                                    <input type="text" name="f1-twitter" placeholder="Twitter..." class="f1-twitter form-control" id="f1-twitter">
-                                </div>
-                                <div class="form-group">
-                                    <label class="sr-only" for="f1-google-plus">Google plus</label>
-                                    <input type="text" name="f1-google-plus" placeholder="Google plus..." class="f1-google-plus form-control" id="f1-google-plus">
-                                </div>
-                                <div class="f1-buttons">
-                                    <button type="button" class="btn btn-previous">Previous</button>
-                                    <button type="submit" class="btn btn-submit">Submit</button>
+                                <div class="row my-4">
+                                    <div class="col-md-12 d-flex align-items-center justify-content-center gap-2">
+                                        <button id="btn-next" type="button" class="btn btn-primary px-4">حفظ
+                                                والتالي</button>
+                                        <button type="button" class="btn btn-outline-secondary">الغاء</button>
+                                    </div>
                                 </div>
                             </fieldset>
 
