@@ -132,6 +132,12 @@
     textarea {
         width: calc(100% - 50px);
     }
+    .field-header {
+        background-color: #FCFCFC;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding-inline: 15px;
+    }
 }
 
 .table {
@@ -140,6 +146,7 @@
 
 .table tbody tr td {
     vertical-align: middle;
+    color: var(--text-color);
 }
 
 .table thead tr th {

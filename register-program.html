@@ -54,7 +54,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="d-flex align-items-center justify-content-center w-100">
-                        <form role="form" class="f1 w-100">
+                        <form role="form" id="form-1" class="f1 w-100">
                             <div class="f1-steps">
                                 <div class="f1-progress">
                                     <!-- ratio = 100 / (no. of steps - 1) -->
@@ -75,7 +75,7 @@
                                 </div>
                                 <div class="f1-step">
                                     <div class="f1-step-icon"><img src="./images/icons/Request-data-icon.svg" alt></div>
-                                    <p>استمارة الطلب</p>
+                                    <p>عناصر المشروع </p>
                                 </div>
                                 <div class="f1-step">
                                     <div class="f1-step-icon"><img src="./images/icons/Qualifications-icon.svg" alt></div>
@@ -91,9 +91,11 @@
                             <fieldset data-step="1">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-12 mb-4">
+                                        <div class="field-header col-12 mb-2">
                                             <h5>البيانات الشخصية</h5>
                                         </div>
+                                    </div>
+                                    <div class="row mx-2">
                                         <div class="col-md-6 row mb-3">
                                             <label for="username" class="col-sm-5 col-form-label">
                                                     الاسم الاول </label>
@@ -186,7 +188,6 @@
                                                 <input disabled type="date" class="form-control" id="nationalIdExpiration">
                                             </div>
                                         </div>
-
                                     </div>
                                     <div class="row my-4">
                                         <div class="col-md-12 d-flex align-items-center justify-content-center gap-2">
@@ -202,9 +203,11 @@
                             <fieldset data-step="2">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-12 mb-4">
+                                        <div class="field-header col-12 mb-2">
                                             <h5>استمارة الطلب</h5>
                                         </div>
+                                    </div>
+                                    <div class="row mx-2">
                                         <div class="col-md-6 row mb-3">
                                             <label for="orderNumber" class="col-sm-5 col-form-label">
                                                     رقم الطلب </label>
@@ -269,6 +272,7 @@
                                                     </select>
                                             </div>
                                         </div>
+
                                     </div>
                                     <div class="row my-4">
                                         <div class="col-md-12 d-flex align-items-center justify-content-center gap-2">
@@ -283,9 +287,11 @@
                             <fieldset data-step="3">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-12 mb-4">
+                                        <div class="field-header col-12 mb-2">
                                             <h5>استمارة المشروع</h5>
                                         </div>
+                                    </div>
+                                    <div class="row mx-2">
                                         <div class="col-md-12 row mb-3">
                                             <label for="description" class="col-sm-2 col-form-label">
                                                     وصف المشروع </label>
@@ -358,6 +364,7 @@
                                                 </div>
                                             </div>
                                         </div>
+
                                     </div>
                                     <div class="row my-4">
                                         <div class="col-md-12 d-flex align-items-center justify-content-center gap-2">
@@ -372,9 +379,11 @@
                             <fieldset data-step="4">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-12 mb-4">
+                                        <div class="field-header col-12 mb-2">
                                             <h5>عناصر المشروع </h5>
                                         </div>
+                                    </div>
+                                    <div class="row mx-2">
                                         <div class="col-12">
                                             <div class="alert alert-primary d-flex align-items-start justify-content-start gap-2">
                                                 <i class="bi bi-info-circle text-primary"></i>
@@ -488,6 +497,7 @@
                                                 <input type="number" class="form-control" id="nationalId">
                                             </div>
                                         </div>
+
                                     </div>
                                     <div class="row my-4">
                                         <div class="col-md-12 d-flex align-items-center justify-content-center gap-2">
@@ -502,9 +512,11 @@
                             <fieldset data-step="5">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-12 mb-4">
+                                        <div class="field-header col-12 mb-2">
                                             <h5>المؤهلات الدراسية الحاصل عليها </h5>
                                         </div>
+                                    </div>
+                                    <div class="row mx-2">
                                         <div class="col-md-6 row mb-3">
                                             <label for="facilityType" class="col-sm-5 col-form-label">
                                                     المؤهل الدراسي   </label>
@@ -560,6 +572,7 @@
                                                     </select>
                                             </div>
                                         </div>
+
                                     </div>
                                     <div class="row my-4">
                                         <div class="col-md-12 d-flex align-items-center justify-content-center gap-2">
@@ -603,7 +616,7 @@
                                 </div>
                                 <div class="container-fluid my-3">
                                     <div class="row">
-                                        <div class="col-12 mb-4">
+                                        <div class="field-header col-12 mb-2">
                                             <h5>المؤهلات المهنية الحاصل عليها </h5>
                                         </div>
                                         <div class="col-md-6 row mb-3">
@@ -704,7 +717,7 @@
                                 </div>
                                 <div class="container-fluid my-3">
                                     <div class="row">
-                                        <div class="col-12 mb-4">
+                                        <div class="field-header col-12 mb-2">
                                             <h5> الخبرات العملية السابقة </h5>
                                         </div>
                                         <div class="col-md-6 row mb-3">
@@ -805,68 +818,77 @@
                             <fieldset data-step="6">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-12 mb-4">
-                                            <h5>المؤهلات الدراسية الحاصل عليها </h5>
+                                        <div class="field-header col-12 mb-2">
+                                            <h5>الضمانات العينية - ضمانات بعد اعتماد التمويل بنسبة تغطي نسبة 100 % من مبلغ التمويل </h5>
                                         </div>
-                                        <div class="col-md-6 row mb-3">
-                                            <label for="facilityType" class="col-sm-5 col-form-label">
-                                                    المؤهل الدراسي   </label>
-                                            <div class="col-sm-7">
-                                                <select class="form-control" id="facilityType">
-                                                        <option selected>اختر الؤهل الدراسي
-                                                             </option>
-                                                        <option value="1">دكتوراه</option>
-                                                        <option value="2">دكتوراه 2</option>
-                                                    </select>
+                                    </div>
+                                    <div class="row mx-2">
+                                        <div class="col-12">
+                                            <div class="alert alert-success d-flex align-items-start justify-content-start gap-2">
+                                                <i class="bi bi-info-circle text-success"></i>
+                                                <div>
+                                                    <p class="text-success">مبلغ القرض المطلوب : 1000200 </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="alert alert-primary d-flex align-items-start justify-content-start gap-2">
+                                                <i class="bi bi-info-circle text-primary"></i>
+                                                <div>
+                                                    <p class="text-primary">مبلغ القرض المطلوب : 1000200 </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="alert alert-warning d-flex align-items-start justify-content-start gap-2">
+                                                <i class="bi bi-info-circle text-warning"></i>
+                                                <div>
+                                                    <p class="text-warning">مبلغ القرض المطلوب : 1000200 </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="alert alert-danger d-flex align-items-start justify-content-start gap-2">
+                                                <i class="bi bi-info-circle text-danger"></i>
+                                                <div>
+                                                    <p class="text-danger">مبلغ القرض المطلوب : 1000200 </p>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 row mb-3">
                                             <div class="col-sm-5">
                                                 <label for="username" class=" col-form-label">
-                                                      التخصص
+                                                    الضمان
                                                 </label>
                                             </div>
                                             <div class="col-sm-7">
                                                 <input type="foundationExpenses" class="form-control" id="foundationExpenses">
+                                                <small class="text-secondary">(عقار، منقولات، الخ…)</small>
                                             </div>
                                         </div>
                                         <div class="col-md-6 row mb-3">
-                                            <label for="grandName" class="col-sm-5 col-form-label">
-                                                جهة المؤهل       </label>
-                                            <div class="col-sm-7">
-                                                <input type="text" class="form-control" id="grandName">
+                                            <div class="col-sm-5">
+                                                <label for="username" class=" col-form-label">
+                                                    قيمة الضمان
+                                                </label>
+                                            </div>
+                                            <div class="col-sm-7 d-flex align-items-center justify-content-start gap-1">
+                                                <input type="foundationExpenses" class="form-control" id="foundationExpenses">
+                                                <small class="text-secondary">ريال</small>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 row mb-3">
-                                            <label for="qualifyDate" class="col-sm-5 col-form-label">
-                                                تاريخ الحصول على المؤهل   </label>
-                                            <div class="col-sm-7">
-                                                <input type="text" class="form-control" id="qualifyDate">
+                                        <div class="col-md-12 row mb-3">
+                                            <label for="description" class="col-sm-2 col-form-label">
+                                                وصف الضمان </label>
+                                            <div class="col-sm-10 text-area">
+                                                <textarea class="form-control" id="description" rows="3" cols="50"></textarea>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 row mb-3">
-                                            <label for="durationStudy" class="col-sm-5 col-form-label">
-                                                مدة الدراسة   </label>
-                                            <div class="col-sm-7">
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 row mb-3">
-                                            <label for="facilityType" class="col-sm-5 col-form-label">
-                                                نوع المدة   </label>
-                                            <div class="col-sm-7">
-                                                <select class="form-control" id="facilityType">
-                                                        <option selected>اختر نوع المدة  
-                                                             </option>
-                                                        <option value="1">سنوات</option>
-                                                        <option value="2">سنوات 2</option>
-                                                    </select>
-                                            </div>
-                                        </div>
+
                                     </div>
                                     <div class="row my-4">
                                         <div class="col-md-12 d-flex align-items-center justify-content-center gap-2">
-                                            <button type="button" class="btn btn-primary px-4">حفظ الموهل  </button>
+                                            <button type="button" class="btn btn-primary px-4">حفظ   </button>
                                             <button type="button" class="btn btn-outline-secondary">الغاء</button>
                                         </div>
                                     </div>
@@ -875,30 +897,33 @@
                                             <table class="table table-striped text-center">
                                                 <thead>
                                                     <tr>
-                                                        <th scope="col">المؤهل الدراسي</th>
-                                                        <th scope="col">التخصص</th>
-                                                        <th scope="col">جهة المؤهل</th>
-                                                        <th scope="col">تاريخ الحصول على المؤهل</th>
-                                                        <th scope="col">مدة الدراسة</th>
-                                                        <th scope="col">نوع المدة</th>
+                                                        <th scope="col"> الضمان</th>
+                                                        <th scope="col">قيمة الضمان</th>
+                                                        <th scope="col">وصف الضمان </th>
                                                         <th scope="col">العمليات</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>دكتوره</td>
-                                                        <td>قانون</td>
-                                                        <td>جامعة الملك فيصل</td>
-                                                        <td>1445/5/29 هـ</td>
-                                                        <td>2</td>
-                                                        <td>سنوات</td>
+                                                        <td>بكالوريوس كلية تقنية</td>
+                                                        <td>عقار</td>
+                                                        <td>شقة سكنية فاخرة بمساحة 120 متر مربع في حي الرفاهية، المدينة الجديدة</td>
                                                         <td>
                                                             <button class="btn btn-secondary float-left">تعديل</button>
                                                             <button class="btn btn-danger float-right">حذف</button>
                                                             <div class="clear-fix"></div>
                                                         </td>
                                                     </tr>
-
+                                                    <tr>
+                                                        <td>بكالوريوس كلية تقنية</td>
+                                                        <td>سياره</td>
+                                                        <td>سياره موئل ٢٠٢٣</td>
+                                                        <td>
+                                                            <button class="btn btn-secondary float-left">تعديل</button>
+                                                            <button class="btn btn-danger float-right">حذف</button>
+                                                            <div class="clear-fix"></div>
+                                                        </td>
+                                                    </tr>
                                                 </tbody>
                                             </table>
                                         </div>
