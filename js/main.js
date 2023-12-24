@@ -150,11 +150,8 @@ function scrollTop() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    if (
-      window.location.pathname.includes("index") ||
-      window.location.pathname == "/" ||
-      window.location.pathname == "/ryadah/"
-    ) {
+    const swiperElement = document.getElementsByClassName("swiper");
+    if (!!swiperElement.length) {
       initSwipers();
       initPartnerSwiper();
     }
