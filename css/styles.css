@@ -27,7 +27,7 @@
     position: absolute;
     top: 30px;
     right: 50px;
-    width: 90%;
+    width: 95.1%;
     height: 5px;
     background: #a2b3be;
 }
@@ -106,11 +106,13 @@
 
 .f1 fieldset {
     display: none;
-    background-color: #fff;
-    padding: 15px 35px;
-    border-radius: 10px;
-    margin-block: 40px;
-    box-shadow: 0px 0px 50px #00000029;
+    .container-fluid {
+        background-color: #fff;
+        padding: 15px 35px;
+        border-radius: 10px;
+        margin-block: 40px;
+        box-shadow: 0px 0px 50px #00000029;
+    }
     h5 {
         color: var(--main-color);
         font-weight: 700;
@@ -130,6 +132,21 @@
     textarea {
         width: calc(100% - 50px);
     }
+}
+
+.table {
+    border-radius: 10px;
+}
+
+.table tbody tr td {
+    vertical-align: middle;
+}
+
+.table thead tr th {
+    background-color: var(--main-color) !important;
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 form {
@@ -177,9 +194,23 @@ form {
             width: calc(100% - 25px);
         }
     }
+    .f1-step .f1-step-icon {
+        width: 50px;
+        height: 50px;
+    }
+    .f1-step.active .f1-step-icon {
+        width: 50px;
+        height: 50px;
+    }
+    .f1-step p {
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 765px) {
+    .f1-steps {
+        overflow-x: auto;
+    }
     .f1 fieldset {
         .text-area {
             display: block;
@@ -188,6 +219,13 @@ form {
         textarea {
             width: calc(100% - 10px);
         }
+    }
+    .f1-progress {
+        top: 26px;
+        width: 88%;
+    }
+    .container {
+        max-width: none;
     }
 }
 
@@ -200,5 +238,29 @@ form {
         textarea {
             width: calc(100%);
         }
+    }
+}
+
+@media (max-width: 500px) {
+    .f1-step .f1-step-icon {
+        width: 35px;
+        height: 35px;
+        img {
+            scale: 0.6;
+        }
+    }
+    .f1-step.active .f1-step-icon {
+        width: 35px;
+        height: 35px;
+        img {
+            scale: 0.6;
+        }
+    }
+    .f1-step p {
+        font-size: 9px;
+    }
+    .f1-progress {
+        top: 18px;
+        width: 80%;
     }
 }

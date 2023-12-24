@@ -12,6 +12,21 @@ jQuery(document).ready(function () {
     loader.style.display = "none";
   };
 
+  // initialize hijri date picker
+  // https://hijri-datepicker.azurewebsites.net/
+  $(function () {
+    const options = {
+      hijri: true,
+      showSwitcher: false,
+    };
+    $("#commpercialIdDate").hijriDatePicker(options);
+    $("#qualifyDate").hijriDatePicker(options);
+    $("#qualifyDate2").hijriDatePicker(options);
+    $("#leaveWorkDate").hijriDatePicker(options);
+  });
+
+  // tabs
+
   $(".f1 fieldset:first").fadeIn("fast");
 
   // forwards
