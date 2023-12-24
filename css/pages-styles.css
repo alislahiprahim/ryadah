@@ -347,6 +347,28 @@
 
 /* end branches */
 
+
+/* management */
+
+.management-container {
+    width: 80%;
+    margin: auto;
+    .card {
+        box-shadow: 0px 0px 50px #00000029;
+        border-radius: 10px;
+        p {
+            height: auto;
+        }
+        .list-unstyled {
+            height: auto;
+            color: var(--text-color);
+        }
+    }
+}
+
+
+/* management */
+
 .main .card label {
     width: 30%;
     color: var(--text-color);
