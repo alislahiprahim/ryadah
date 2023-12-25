@@ -134,22 +134,28 @@
 
         <!--start main -->
 
-        <section class="main my-5 pb-5">
-            <form action>
-                <div class="branche-container card p-5">
-                    <div class="feedbackDesc d-flex mb-4">
-                        <label for="name">الاسم</label>
-                        <input id="name" type="text" class="form-control" />
+        <section class="login-card  my-5 d-flex align-items-center justify-content-center">
+            <form action class="card w-100">
+                <div class="">
+                    <div class="row mb-4">
+                        <label class="col-sm-4" for="name">الاسم</label>
+                        <div class="col-sm-8">
+                            <input id="name" type="text" class="form-control" />
+                        </div>
                     </div>
 
-                    <div class="feedbackDesc d-flex mb-4">
-                        <label for="email">البريد الإلكتروني</label>
-                        <input id="email" type="email" class="form-control" />
+                    <div class="row mb-4">
+                        <label class="col-sm-4" for="email">البريد الإلكتروني</label>
+                        <div class="col-sm-8">
+                            <input id="email" type="email" class="form-control" />
+                        </div>
                     </div>
 
-                    <div class="feedbackDesc d-flex mb-4">
-                        <label for="txarea">الرأي والملاحظات *</label>
-                        <textarea name="txarea" rows="7" id="txarea" class="form-control"></textarea>
+                    <div class="row mb-4">
+                        <label class="col-sm-4" for="txarea">الرأي والملاحظات *</label>
+                        <div class="col-sm-8">
+                            <textarea name="txarea" rows="7" id="txarea" class="form-control"></textarea>
+                        </div>
                     </div>
 
                     <!-- recaptcha -->
@@ -163,7 +169,7 @@
                     <!-- <input type="submit" value="Submit" /> -->
                     <!-- </form> -->
 
-                    <div class="mt-5 me-auto">
+                    <div class="mt-5 d-flex align-item-center justify-content-end">
                         <button type="submit" class="btn btn-outline-primary">
                                 <a>إرسال<i class="bi bi-arrow-left me-2"></i>
                                 </a>
@@ -258,7 +264,7 @@
                                     </div>
                                     <div class="links">
                                         <a href="https://twitter.com" target="_blank">
-                                            <i class="bi-brands bi-twitter"></i>
+                                            <i class="bi-brands bi-twitter-x"></i>
                                             <!-- <i class="fa-brands fa-x-twitter"></i> -->
                                             <!-- <img loading="lazy"src="./images/home/x-twitter.svg" alt=""> -->
                                         </a>
