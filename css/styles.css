@@ -147,6 +147,8 @@
 .table tbody tr td {
     vertical-align: middle;
     color: var(--text-color);
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .table thead tr th {
@@ -154,6 +156,23 @@
     color: #fff !important;
     font-weight: 500;
     font-size: 14px;
+    &:first-child {
+        border-top-right-radius: 4px;
+    }
+    &:last-child {
+        border-top-left-radius: 4px;
+    }
+}
+
+td small.alert {
+    display: block;
+    padding: 0px;
+    width: 65px;
+    height: 20px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    margin: auto;
 }
 
 form {
