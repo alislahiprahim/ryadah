@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2684" data-name="Rectangle 2684" width="32" height="32" transform="translate(1709 468)" fill="#f5f9fc" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="sms-sent-icon" transform="translate(-1709 -457)">
+    <g id="Mask_Group_44" data-name="Mask Group 44" transform="translate(0 -11)" clip-path="url(#clip-path)">
+      <g id="mail" transform="translate(1709 468)">
+        <g id="Group_6075" data-name="Group 6075">
+          <g id="Group_6074" data-name="Group 6074">
+            <path id="Path_4752" data-name="Path 4752" d="M32,2.813A2.816,2.816,0,0,0,29.188,0H2.813A2.816,2.816,0,0,0,0,2.813V17.938a2.81,2.81,0,0,0,2.813,2.806H15.549a8.356,8.356,0,0,0-.487,2.819,8.469,8.469,0,0,0,16.938,0,8.387,8.387,0,0,0-.825-3.636A2.817,2.817,0,0,0,32,17.938Zm-3.738-.937L16,11.138,3.738,1.875Zm-4.7,28.25a6.563,6.563,0,1,1,6.563-6.562A6.6,6.6,0,0,1,23.563,30.125Zm6.563-12.187a.934.934,0,0,1-.042.276,8.424,8.424,0,0,0-6.521-3.089,8.523,8.523,0,0,0-7.058,3.75H2.813a.939.939,0,0,1-.937-.937V2.817l13.56,10.243a.938.938,0,0,0,1.13,0L30.125,2.817Z" fill="#f5f9fc"/>
+          </g>
+        </g>
+        <g id="Group_6077" data-name="Group 6077">
+          <g id="Group_6076" data-name="Group 6076">
+            <path id="Path_4753" data-name="Path 4753" d="M27.98,21.029a.938.938,0,0,0-1.326-.009l-4.087,4.033L20.413,22.9a.937.937,0,0,0-1.326,1.326L21.9,27.038a.938.938,0,0,0,1.321,0l4.75-4.687A.938.938,0,0,0,27.98,21.029Z" fill="#f5f9fc"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

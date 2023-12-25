@@ -111,4 +111,13 @@ jQuery(document).ready(function() {
             .attr("style", "width: " + ratio * stepNumber + "%;")
             .data("ratio", ratio);
     }
+
+    // request details set nav tab name
+    if($("#v-pills-tab").length){
+        $("#tab-name").text($('#v-pills-tab li.nav-link').data('tab-label'));
+        $('#v-pills-tab li.nav-link').on('click', function () {
+            // Get the value of the 'data-tab-label' attribute
+            $("#tab-name").text($(this).data('tab-label'));
+          });
+     }
 });

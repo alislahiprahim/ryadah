@@ -42,7 +42,7 @@
         <div class="container">
             <div class="row py-4">
                 <div class="col-12 d-flex justify-content-between">
-                    <p class="text-secondary"><i class="bi bi-house-door mx-1"></i><a class="text-secondary text-decoration-none" href="#">طلبات ريادي</a> </p>
+                    <p class="text-secondary"><i class="bi bi-house-door mx-1"></i><a class="text-secondary text-decoration-none" href="riyadah-requests.html">طلبات ريادي</a> > <span id="tab-name"></span></p>
                     <button class="btn btn-sm btn-primary d-flex align-items-center">
                         <i class="bi bi-plus fs-5"></i>
                         طلب دعم مشروع جديد
@@ -50,117 +50,213 @@
                 </div>
             </div>
         </div>
-        <div class="container p-4 bg-white rounded-2">
-            <div class="container-fluid">
+        <div class="container rounded-2 requests-details">
+            <div class="container-fluid ">
                 <div class="row">
-                    <div class="field-header col-12 mb-2">
-                        <h5>قائمة طلبات الريادي </h5>
+                    <div class="col-md-3">
+                        <ul class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <li class="nav-link shadow-sm active " id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="true" data-tab-label="الرسائل المرسلة">
+                                <span><img src="./images/icons/sms-sent-icon.svg" alt=""> الرسائل المرسلة</span>
+                                <div class="count">9</div>
+                            </li>
+                            <li class="nav-link shadow-sm " id="v-pills-complains-tab" data-bs-toggle="pill" data-bs-target="#v-pills-complains" type="button" role="tab" aria-controls="v-pills-complains" aria-selected="false" data-tab-label="الملاحظات والشكاوى">
+                                <span><img src="./images/icons/Feedback-icon.svg" alt=""> الملاحظات والشكاوى</span>
+                                <div class="count">6</div>
+                            </li>
+                            <li class="nav-link shadow-sm " id="v-pills-print-tab" data-bs-toggle="pill" data-bs-target="#v-pills-print" type="button" role="tab" aria-controls="v-pills-print" aria-selected="false" data-tab-label="طباعة الشهادة">
+                                <span><img src="./images/icons/print-list-icon.svg" alt=""> طباعة الشهادة</span>
+                                <div class="count">4</div>
+                            </li>
+                            <li class="nav-link shadow-sm " id="v-pills-events-tab" data-bs-toggle="pill" data-bs-target="#v-pills-events" type="button" role="tab" aria-controls="v-pills-events" aria-selected="false" data-tab-label=" حضور فعاليات">
+                                <span><img src="./images/icons/Schedule-icon.svg" alt=""> حضور فعاليات</span>
+                                <div class="count">2</div>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12  table-responsive">
-                        <table class="table table-striped text-center">
-                            <thead>
-                                <tr>
-                                    <th scope="col"> رقم الطلب</th>
-                                    <th scope="col">تاريخ الطلب</th>
-                                    <th scope="col">البرنامج </th>
-                                    <th scope="col">نوع الدعم</th>
-                                    <th scope="col">حالة الطلب</th>
-                                    <th scope="col">العمليات</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>100451211088</td>
-                                    <td>1445/5/29 هـ</td>
-                                    <td>برنامج الدورات الالكترونية</td>
-                                    <td>دورة تدريبية</td>
-                                    <td>
-                                        <small class="alert alert-success text-success">فعال</small>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-sm btn-primary">تفاصيل الطلب</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>100451211088</td>
-                                    <td>1445/5/29 هـ</td>
-                                    <td>برنامج الدورات الالكترونية</td>
-                                    <td>دورة تدريبية</td>
-                                    <td>
-                                        <small class="alert alert-danger text-danger">غير فعال</small>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-sm btn-primary">تفاصيل الطلب</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>100451211088</td>
-                                    <td>1445/5/29 هـ</td>
-                                    <td>برنامج الدورات الالكترونية</td>
-                                    <td>دورة تدريبية</td>
-                                    <td>
-                                        <small class="alert alert-danger text-danger">غير فعال</small>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-sm btn-primary">تفاصيل الطلب</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>100451211088</td>
-                                    <td>1445/5/29 هـ</td>
-                                    <td>برنامج الدورات الالكترونية</td>
-                                    <td>دورة تدريبية</td>
-                                    <td>
-                                        <small class="alert alert-success text-success">فعال</small>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-sm btn-primary">تفاصيل الطلب</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>100451211088</td>
-                                    <td>1445/5/29 هـ</td>
-                                    <td>برنامج انطلاقة</td>
-                                    <td>دورة تدريبية</td>
-                                    <td>
-                                        <small class="alert alert-success text-success">فعال</small>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-sm btn-primary">تفاصيل الطلب</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>100451211088</td>
-                                    <td>1445/5/29 هـ</td>
-                                    <td>برنامج انطلاقة</td>
-                                    <td>دورة تدريبية</td>
-                                    <td>
-                                        <small class="alert alert-success text-success">فعال</small>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-sm btn-primary">تفاصيل الطلب</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>100451211088</td>
-                                    <td>1445/5/29 هـ</td>
-                                    <td>برنامج انطلاقة</td>
-                                    <td>دورة تدريبية</td>
-                                    <td>
-                                        <small class="alert alert-success text-success">فعال</small>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-sm btn-primary">تفاصيل الطلب</button>
-                                    </td>
-                                </tr>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-12 row bg-white rounded-2 py-2 mx-1 shadow-sm">
+                                <div class="col-6 py-1">
+                                    <b class="text-primary fs-6">رقم الطلب</b>
+                                    <small class="text-secondary">100451211088</small>
+                                </div>
+                                <div class="col-6 py-1">
+                                    <b class="text-primary fs-6">اخر اجراء</b>
+                                    <small class="text-secondary">تقيم المشروع مجتاز</small>
+                                </div>
+                            </div>
+                            <div class="col-12 p-0 my-2 row bg-white rounded-2  mx-1 shadow-sm">
+                                <div class="tab-content p-0" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                                        <h5 class="field-header text-primary">الرسائل المرسلة</h5>
+                                        <div class="table-responsive mx-3">
+                                            <table class="table table-striped text-center">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"> م</th>
+                                                        <th scope="col">تاريخ الرسالة</th>
+                                                        <th scope="col">محتوى الرسالة</th>
+                                                        <th scope="col">نوع الرسائل</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>تود ريادة إشعارك بضرورة الدخول على حسابك لإكمال الطلب</td>
+                                                        <td>برنامج الدورات الالكترونية</td>
+                                                        <td>SMS</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>تود ريادة إشعارك بضرورة الدخول على حسابك لإكمال الطلب</td>
+                                                        <td>تود ريادة إحاطتك بعدم اجتيازك مرحلة مطابقة الشروط بسبب . عدم تطابق المؤهل مع نوع نشاط المشروع . عدم وضوح الفكرة .</td>
+                                                        <td>SMS</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>1445/5/29 هـ</td>
+                                                        <td>تود ريادة إشعارك بضرورة الدخول على حسابك لإكمال الطلب</td>
+                                                        <td>SMS</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>1445/5/29 هـ</td>
+                                                        <td>برنامج الدورات الالكترونية</td>
+                                                        <td>SMS</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>تود ريادة إشعارك بضرورة الدخول على حسابك لإكمال الطلب</td>
+                                                        <td>برنامج انطلاقة</td>
+                                                        <td>SMS</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-complains" role="tabpanel" aria-labelledby="v-pills-complains-tab" tabindex="1">
+                                        <h5 class="field-header text-primary">الملاحظات والشكاوى </h5>
+                                        <div class="row  mx-3">
+                                            <div class="col-12 row mb-2">
+                                                <label class="col-sm-3" for="name">نوع الملحوظة</label>
+                                                <div class="col-sm-9">
+                                                    <input id="name" type="text" class="form-control" />
+                                                </div>
+                                            </div>
+                                            <div class="col-12 row mb-2">
 
-                            </tbody>
-                        </table>
+                                                <label class="col-sm-3" for="txarea">الرأي والملاحظات</label>
+                                                <div class="col-sm-9">
+                                                    <textarea name="txarea" rows="2" id="txarea" class="form-control"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-2 d-flex align-items-center justify-content-center gap-2">
+                                                <button class="btn btn-sm btn-primary px-4">ارسال</button>
+                                                <button class="btn btn-sm btn-outline-secondary">الغاء</button>
+                                            </div>
+                                        </div>
+                                        <div class="row mx-3">
+                                            <div class="col-12 ">
+                                                <div class="table-responsive ">
+                                                    <table class="table table-striped text-center">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col"> م</th>
+                                                                <th scope="col">رقم الطلب</th>
+                                                                <th scope="col">التاريخ</th>
+                                                                <th scope="col">محتوى الملحوظة</th>
+                                                                <th scope="col">الحالة</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>118451179086</td>
+                                                                <td>2023/12/17</td>
+                                                                <td>برنامج الدورات الالكترونية</td>
+                                                                <td>
+                                                                    <small class="alert alert-success text-success">تم
+                                                                        الرد</small>
+                                                                    <span class="badge text-bg-primary p-2 px-3  rounded-1 mt-1">عرض
+                                                                        الرد</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>118451179086</td>
+                                                                <td>2023/12/17</td>
+                                                                <td>تود ريادة إحاطتك بعدم اجتيازك مرحلة مطابقة الشروط بسبب . عدم تطابق المؤهل مع نوع نشاط المشروع . عدم وضوح الفكرة .
+                                                                </td>
+                                                                <td>
+                                                                    <small class="alert alert-warning text-warning">
+                                                                        لم يرد بعد</small>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-print" role="tabpanel" aria-labelledby="v-pills-print-tab" tabindex="2">
+                                        <h5 class="field-header text-primary">طباعة الشهادة</h5>
+                                        <div class="table-responsive mx-3">
+                                            <table class="table table-striped text-center">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"> م</th>
+                                                        <th scope="col">الاسم</th>
+                                                        <th scope="col">الدورة</th>
+                                                        <th scope="col">تاريخ الدورة</th>
+                                                        <th scope="col">العمليات</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>فهد سلطان الحربي</td>
+                                                        <td>التسويق الالكتروني بالمحتوى</td>
+                                                        <td>1445/5/29 هـ</td>
+                                                        <td><button class="btn btn-sm btn-secondary"><i class="bi bi-printer"></i></button></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-events" role="tabpanel" aria-labelledby="v-pills-events-tab" tabindex="3">
+                                        <h5 class="field-header text-primary">حضور فعاليات</h5>
+                                        <div class="table-responsive mx-3">
+                                            <table class="table table-striped text-center">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"> م</th>
+                                                        <th scope="col">الفاعلية</th>
+                                                        <th scope="col">العمليات</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>التسويق الالكتروني بالمحتوى</td>
+                                                        <td><button class="btn btn-sm btn-secondary"><i class="bi bi-link-45deg"></i></button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>أساسيات دراسة الجدوى</td>
+                                                        <td><button class="btn btn-sm btn-secondary"><i class="bi bi-link-45deg"></i></button></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
 
         <!-- contact section -->
