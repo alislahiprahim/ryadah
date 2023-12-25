@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroller">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riyadah</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/home/logo.svg" />
+    <meta property="og:url" content="https://www.rayiadah.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="rayiadah">
+    <meta property="og:image" itemprop="image" content="./images/home/logo.svg">
+    <meta property="og:description" content="rayiadah description">
+    <meta property="og:site_name" content="rayiadah">
+
+    <meta name="description" content="rayiadah description">
+
+    <meta name="twitter:title" content="ًrayiadah">
+    <meta name="twitter:description" content="rayiadah description">
+    <meta name="twitter:site" content="@rayiadah">
+    <meta name="twitter:creator" content="@rayiadah">
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- style files -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/icons/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <div class="loader"><img src="./images/home/riyadah-footer.svg" alt></div>
+    <main class="position-relative">
+        <header id="navbar"></header>
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-12 d-flex justify-content-between">
+                    <p class="text-secondary"><i class="bi bi-house-door mx-1"></i><a class="text-secondary text-decoration-none" href="#">دورات تدريبية</a> </p>
+                    <button class="btn btn-sm btn-primary d-flex align-items-center">
+                        <i class="bi bi-plus fs-5"></i>
+                        طلب دعم مشروع جديد
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container mb-3">
+            <div class="stages-tabs-btn">
+                <ul class="nav nav-fill gap-2 p-1 rounded-2 small shadow-sm bg-white" role="tablist" id="stages-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="stages-tab-1" data-bs-toggle="pill" data-bs-target="#stages-1" type="button" role="tab" aria-controls="stages-1" aria-selected="true">
+          مراحل الطلب
+        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="stages-tab-2" data-bs-toggle="pill" data-bs-target="#stages-2" type="button" role="tab" aria-controls="stages-2" aria-selected="false">
+                            الخدمات المساندة
+        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container rounded-2 requests-details">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="stages-1" role="tabpanel" aria-labelledby="stages-tab-1" tabindex="0">
+                            <div class="container-fluid ">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <ul class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <li class="nav-link shadow-sm active " id="v-pills-1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-1" type="button" role="tab" aria-controls="v-pills-1" aria-selected="true" data-tab-label="الرسائل المرسلة">
+                                                <span><img src="./images/icons/Request-data-icon.svg" alt=""> بيانات الطلب</span>
+                                                <div class="count"><i class="bi bi-exclamation-triangle text-warning fs-6"></i></div>
+                                            </li>
+                                            <li class="nav-link shadow-sm " id="v-pills-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-2" type="button" role="tab" aria-controls="v-pills-2" aria-selected="false" data-tab-label="الملاحظات والشكاوى">
+                                                <span><img src="./images/icons/conditions-icon.svg" alt=""> مطابقة الشروط</span>
+                                                <div class="count"><i class="bi bi-check2-circle text-success fs-6"></i></div>
+                                            </li>
+                                            <li class="nav-link shadow-sm " id="v-pills-3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-3" type="button" role="tab" aria-controls="v-pills-3" aria-selected="false" data-tab-label="طباعة الشهادة">
+                                                <span><img src="./images/icons/Credit-check.svg" alt=""> الفحص الائتماني</span>
+                                                <div class="count"><i class="bi bi-exclamation-triangle text-warning fs-6"></i></div>
+                                            </li>
+                                            <li class="nav-link shadow-sm " id="v-pills-4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-4" type="button" role="tab" aria-controls="v-pills-4" aria-selected="false" data-tab-label=" حضور فعاليات">
+                                                <span><img src="./images/icons/Schedule-icon.svg" alt=""> جدولة المقابلة</span>
+                                                <div class="count"><i class="bi bi-exclamation-triangle text-warning fs-6"></i></div>
+                                            </li>
+                                            <li class="nav-link shadow-sm " id="v-pills-5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-5" type="button" role="tab" aria-controls="v-pills-5" aria-selected="false" data-tab-label=" حضور فعاليات">
+                                                <span><img src="./images/icons/result-icon.svg" alt=""> نتيجة المقابلة</span>
+                                                <div class="count"><i class="bi bi-exclamation-triangle text-warning fs-6"></i></div>
+                                            </li>
+                                            <li class="nav-link shadow-sm " id="v-pills-6-tab" data-bs-toggle="pill" data-bs-target="#v-pills-6" type="button" role="tab" aria-controls="v-pills-6" aria-selected="false" data-tab-label=" حضور فعاليات">
+                                                <span><img src="./images/icons/paycard-icon.svg" alt=""> سداد رسوم دورة ابدأ مشروعك</span>
+                                                <div class="count"><i class="bi bi-exclamation-triangle text-warning fs-6"></i></div>
+                                            </li>
+                                            <li class="nav-link shadow-sm " id="v-pills-7-tab" data-bs-toggle="pill" data-bs-target="#v-pills-7" type="button" role="tab" aria-controls="v-pills-7" aria-selected="false" data-tab-label=" حضور فعاليات">
+                                                <span><img src="./images/icons/Schedule-icon.svg" alt=""> جدولة دورة ابدأ مشروعك</span>
+                                                <div class="count"><i class="bi bi-exclamation-triangle text-warning fs-6"></i></div>
+                                            </li>
+                                            <li class="nav-link shadow-sm " id="v-pills-8-tab" data-bs-toggle="pill" data-bs-target="#v-pills-8" type="button" role="tab" aria-controls="v-pills-8" aria-selected="false" data-tab-label=" حضور فعاليات">
+                                                <span><img src="./images/icons/Attend-icon.svg" alt=""> حضور دورة ابدأ مشروعك</span>
+                                                <div class="count"><i class="bi bi-exclamation-triangle text-warning fs-6"></i></div>
+                                            </li>
+                                            <li class="nav-link shadow-sm " id="v-pills-9-tab" data-bs-toggle="pill" data-bs-target="#v-pills-9" type="button" role="tab" aria-controls="v-pills-9" aria-selected="false" data-tab-label=" حضور فعاليات">
+                                                <span><img src="./images/icons/Approval-icon.svg" alt=""> موافقة الريادي على الدراسة</span>
+                                                <div class="count"><i class="bi bi-exclamation-triangle text-warning fs-6"></i></div>
+                                            </li>
+                                            <li class="nav-link shadow-sm " id="v-pills-10-tab" data-bs-toggle="pill" data-bs-target="#v-pills-10" type="button" role="tab" aria-controls="v-pills-10" aria-selected="false" data-tab-label=" حضور فعاليات">
+                                                <span><img src="./images/icons/Approval-icon.svg" alt="">اعتماد دراسة الجدوى</span>
+                                                <div class="count"><i class="bi bi-exclamation-triangle text-warning fs-6"></i></div>
+                                            </li>
+                                            <li class="nav-link shadow-sm " id="v-pills-11-tab" data-bs-toggle="pill" data-bs-target="#v-pills-11" type="button" role="tab" aria-controls="v-pills-11" aria-selected="false" data-tab-label=" حضور فعاليات">
+                                                <span><img src="./images/icons/Approval-icon.svg" alt="">رفع طلب التمويل للممول</span>
+                                                <div class="count"><i class="bi bi-check2-circle text-success fs-6"></i></div>
+                                            </li>
+                                            <li class="nav-link shadow-sm " id="v-pills-12-tab" data-bs-toggle="pill" data-bs-target="#v-pills-12" type="button" role="tab" aria-controls="v-pills-12" aria-selected="false" data-tab-label=" حضور فعاليات">
+                                                <span><img src="./images/icons/Approval-icon.svg" alt="">اعتماد التمويل</span>
+                                                <div class="count"><i class="bi bi-check2-circle text-success fs-6"></i></div>
+                                            </li>
+                                            <li class="nav-link shadow-sm " id="v-pills-13-tab" data-bs-toggle="pill" data-bs-target="#v-pills-13" type="button" role="tab" aria-controls="v-pills-13" aria-selected="false" data-tab-label=" حضور فعاليات">
+                                                <span><img src="./images/icons/Approval-icon.svg" alt="">مسوغات عقد التمويل</span>
+                                                <div class="count"><i class="bi bi-exclamation-triangle text-warning fs-6"></i></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="row">
+                                            <div class="col-12 row bg-white rounded-2 py-2 mx-1 shadow-sm">
+                                                <div class="col-6 py-1">
+                                                    <b class="text-primary fs-6">رقم الطلب</b>
+                                                    <small class="text-secondary">100451211088</small>
+                                                </div>
+                                                <div class="col-6 py-1">
+                                                    <b class="text-primary fs-6">اخر اجراء</b>
+                                                    <small class="text-secondary">تقيم المشروع مجتاز</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 p-0 my-2 row bg-white rounded-2  mx-1 shadow-sm">
+                                                <div class="tab-content p-0" id="v-pills-tabContent">
+                                                    <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab" tabindex="0">
+                                                        <h5 class="field-header text-primary">بيانات الطلب</h5>
+                                                        <div class="tab-content-100">
+                                                            <div class="d-flex flex-column align-items-center justify-content-center gap-1">
+                                                                <i class="bi bi-exclamation-triangle text-warning fs-1"></i>
+                                                                <a class="text-decoration-none text-primary" href="">
+                                                                    <b>اضغط لاكمال بيانات الطلب</b>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab" tabindex="1">
+                                                        <h5 class="field-header text-primary">مطابقة الشروط </h5>
+                                                        <div class="tab-content-100">
+                                                            <div class="d-flex flex-column align-items-center justify-content-center gap-1">
+                                                                <i class="bi bi-check2-circle fs-1 text-success"></i>
+                                                                <a class="text-decoration-none text-primary" href="">
+                                                                    <b>تم اكتمال الطلب</b>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab" tabindex="2">
+                                                        <h5 class="field-header text-primary">الفحص الائتماني</h5>
+                                                        <div class="tab-content-100">
+                                                            <div class="d-flex flex-column align-items-center justify-content-center gap-1">
+                                                                <i class="bi bi-exclamation-triangle fs-1 text-warning"></i>
+                                                                <a class="text-decoration-none text-primary" href="">
+                                                                    <b>اضغط لاكمال بيانات الطلب</b>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab" tabindex="3">
+                                                        <h5 class="field-header text-primary">جدولة المقابلة</h5>
+                                                        <div class="tab-content-100">
+                                                            <div class="d-flex flex-column align-items-center justify-content-center gap-1">
+                                                                <i class="bi bi-exclamation-triangle fs-1 text-warning"></i>
+                                                                <a class="text-decoration-none text-primary" href="">
+                                                                    <b>اضغط لاكمال بيانات الطلب</b>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab" tabindex="3">
+                                                        <h5 class="field-header text-primary">نتيجة المقابلة</h5>
+                                                        <div class="tab-content-100">
+                                                            <div class="d-flex flex-column align-items-center justify-content-center gap-1">
+                                                                <i class="bi bi-exclamation-triangle fs-1 text-warning"></i>
+                                                                <a class="text-decoration-none text-primary" href="">
+                                                                    <b>اضغط لاكمال بيانات الطلب</b>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-6-tab" tabindex="3">
+                                                        <h5 class="field-header text-primary">سداد رسوم دورة ابدأ مشروعك</h5>
+                                                        <div class="tab-content-100">
+                                                            <div class="d-flex flex-column align-items-center justify-content-center gap-1">
+                                                                <i class="bi bi-exclamation-triangle fs-1 text-warning"></i>
+                                                                <a class="text-decoration-none text-primary" href="">
+                                                                    <b>اضغط لاكمال بيانات الطلب</b>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-7" role="tabpanel" aria-labelledby="v-pills-7-tab" tabindex="3">
+                                                        <h5 class="field-header text-primary">جدولة دورة ابدأ مشروعك</h5>
+                                                        <div class="tab-content-100">
+                                                            <div class="d-flex flex-column align-items-center justify-content-center gap-1">
+                                                                <i class="bi bi-exclamation-triangle fs-1 text-warning"></i>
+                                                                <a class="text-decoration-none text-primary" href="">
+                                                                    <b>اضغط لاكمال بيانات الطلب</b>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-8" role="tabpanel" aria-labelledby="v-pills-8-tab" tabindex="3">
+                                                        <h5 class="field-header text-primary">حضور دورة ابدأ مشروعك</h5>
+                                                        <div class="tab-content-100">
+                                                            <div class="d-flex flex-column align-items-center justify-content-center gap-1">
+                                                                <i class="bi bi-exclamation-triangle fs-1 text-warning"></i>
+                                                                <a class="text-decoration-none text-primary" href="">
+                                                                    <b>اضغط لاكمال بيانات الطلب</b>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-9" role="tabpanel" aria-labelledby="v-pills-9-tab" tabindex="3">
+                                                        <h5 class="field-header text-primary">موافقة الريادي على الدراسة</h5>
+                                                        <div class="tab-content-100">
+                                                            <div class="d-flex flex-column align-items-center justify-content-center gap-1">
+                                                                <i class="bi bi-exclamation-triangle fs-1 text-warning"></i>
+                                                                <a class="text-decoration-none text-primary" href="">
+                                                                    <b>اضغط لاكمال بيانات الطلب</b>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-10" role="tabpanel" aria-labelledby="v-pills-10-tab" tabindex="3">
+                                                        <h5 class="field-header text-primary">اعتماد دراسة الجدوى</h5>
+                                                        <div class="tab-content-100">
+                                                            <div class="d-flex flex-column align-items-center justify-content-center gap-1">
+                                                                <i class="bi bi-exclamation-triangle fs-1 text-warning"></i>
+                                                                <a class="text-decoration-none text-primary" href="">
+                                                                    <b>اضغط لاكمال بيانات الطلب</b>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-11" role="tabpanel" aria-labelledby="v-pills-11-tab" tabindex="3">
+                                                        <h5 class="field-header text-primary">رفع طلب التمويل للممول</h5>
+                                                        <div class="tab-content-100">
+                                                            <div class="d-flex flex-column align-items-center justify-content-center gap-1">
+                                                                <i class="bi bi-check2-circle fs-1 text-success"></i>
+                                                                <a class="text-decoration-none text-primary" href="">
+                                                                    <b>اضغط لاكمال بيانات الطلب</b>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-12" role="tabpanel" aria-labelledby="v-pills-12-tab" tabindex="3">
+                                                        <h5 class="field-header text-primary">اعتماد التمويل</h5>
+                                                        <div class="tab-content-100">
+                                                            <div class="d-flex flex-column align-items-center justify-content-center gap-1">
+                                                                <i class="bi bi-check2-circle fs-1 text-success"></i>
+                                                                <a class="text-decoration-none text-primary" href="">
+                                                                    <b>اضغط لاكمال بيانات الطلب</b>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-13" role="tabpanel" aria-labelledby="v-pills-13-tab" tabindex="3">
+                                                        <h5 class="field-header text-primary">مسوغات عقد التمويل</h5>
+                                                        <div class="tab-content-100">
+                                                            <div class="d-flex flex-column align-items-center justify-content-center gap-1">
+                                                                <i class="bi bi-exclamation-triangle fs-1 text-warning"></i>
+                                                                <a class="text-decoration-none text-primary" href="">
+                                                                    <b>اضغط لاكمال بيانات الطلب</b>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="stages-2" role="tabpanel" aria-labelledby="stages-tab-2" tabindex="1">
+                            <div class="container-fluid ">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <ul class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <li class="nav-link shadow-sm active" id="v-pills-bank-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bank" type="button" role="tab" aria-controls="v-pills-back" aria-selected="true" data-tab-label="بيانات الحسابات البنكية">
+                                                <span><img src="./images/icons/bank-account-icon.svg" alt=""> بيانات الحسابات البنكية</span>
+                                                <div class="count"><i class="bi bi-check2-circle text-success fs-6"></i></div>
+                                            </li>
+                                            <li class="nav-link shadow-sm  " id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false" data-tab-label="الرسائل المرسلة">
+                                                <span><img src="./images/icons/sms-sent-icon.svg" alt=""> الرسائل المرسلة</span>
+                                                <div class="count">9</div>
+                                            </li>
+                                            <li class="nav-link shadow-sm " id="v-pills-complains-tab" data-bs-toggle="pill" data-bs-target="#v-pills-complains" type="button" role="tab" aria-controls="v-pills-complains" aria-selected="false" data-tab-label="الملاحظات والشكاوى">
+                                                <span><img src="./images/icons/Feedback-icon.svg" alt=""> الملاحظات والشكاوى</span>
+                                                <div class="count">6</div>
+                                            </li>
+                                            <li class="nav-link shadow-sm " id="v-pills-print-tab" data-bs-toggle="pill" data-bs-target="#v-pills-print" type="button" role="tab" aria-controls="v-pills-print" aria-selected="false" data-tab-label="طباعة الشهادة">
+                                                <span><img src="./images/icons/print-list-icon.svg" alt=""> طباعة نماذج الاقتراض والتمويل</span>
+                                                <div class="count"><i class="bi bi-exclamation-triangle text-warning "></i></div>
+                                            </li>
+                                            <li class="nav-link shadow-sm " id="v-pills-events-tab" data-bs-toggle="pill" data-bs-target="#v-pills-events" type="button" role="tab" aria-controls="v-pills-events" aria-selected="false" data-tab-label=" حضور فعاليات">
+                                                <span><img src="./images/icons/Schedule-icon.svg" alt=""> حضور فعاليات</span>
+                                                <div class="count">2</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="row">
+                                            <div class="col-12 row bg-white rounded-2 py-2 mx-1 shadow-sm">
+                                                <div class="col-6 py-1">
+                                                    <b class="text-primary fs-6">رقم الطلب</b>
+                                                    <small class="text-secondary">100451211088</small>
+                                                </div>
+                                                <div class="col-6 py-1">
+                                                    <b class="text-primary fs-6">اخر اجراء</b>
+                                                    <small class="text-secondary">تقيم المشروع مجتاز</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 p-0 my-2 row bg-white rounded-2  mx-1 shadow-sm">
+                                                <div class="tab-content p-0" id="v-pills-tabContent">
+                                                    <div class="tab-pane fade show active" id="v-pills-bank" role="tabpanel" aria-labelledby="v-pills-bank-tab" tabindex="0">
+                                                        <h5 class="field-header text-primary">بيانات الحسابات البنكية</h5>
+                                                        <div class="row mx-3">
+                                                            <div class="col-md-6 row mb-3">
+                                                                <label for="requesNum" class="col-sm-5 col-form-label">
+                                                                            رقم الطلب </label>
+                                                                <div class="col-sm-7">
+                                                                    <input type="text" class="form-control" id="requesNum">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 row mb-3">
+                                                                <label for="fatherName" class="col-sm-5 col-form-label">
+                                                                        الاسم </label>
+                                                                <div class="col-sm-7">
+                                                                    <input type="text" class="form-control" id="fatherName">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 row mb-3">
+                                                                <label for="grandName" class="col-sm-5 col-form-label">
+                                                                        نوع دعم المشروع </label>
+                                                                <div class="col-sm-7">
+                                                                    <input type="text" class="form-control" id="grandName">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 row mb-3">
+                                                                <label for="familyName" class="col-sm-5 col-form-label">
+                                                                        البرنامج </label>
+                                                                <div class="col-sm-7">
+                                                                    <select class="form-control" id="gender">
+                                                                                    <option selected>اختر
+                                                                                        نوع دعم المشروع  </option>
+                                                                                    <option
+                                                                                        value="1">مشروع قائم  </option>
+                                                                                    <option
+                                                                                        value="2"> مشروع قائم 2 </option>
+                                                                                </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 row mb-3">
+                                                                <label for="nationalId" class="col-sm-5 col-form-label">
+                                                                        مدينة المشروع المبدئية </label>
+                                                                <div class="col-sm-7">
+                                                                    <select class="form-control" id="gender">
+                                                                                    <option selected>اختر
+                                                                                        نوع النشاط</option>
+                                                                                    <option
+                                                                                        value="1">ستوديو تصوير</option>
+                                                                                    <option
+                                                                                        value="2">ستوديو تصوير 2</option>
+                                                                                </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 row mb-3">
+                                                                <label for="gender" class="col-sm-5 col-form-label">
+                                                                        نوع النشاط </label>
+                                                                <div class="col-sm-7">
+                                                                    <select class="form-control" id="gender">
+                                                                                <option selected>اختر
+                                                                                    نوع النشاط</option>
+                                                                                <option
+                                                                                    value="1">ستوديو تصوير</option>
+                                                                                <option
+                                                                                    value="2">ستوديو تصوير 2</option>
+                                                                            </select>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row m-3">
+                                                            <div class="col-12 d-flex align-items-center justify-content-center gap-2">
+                                                                <button class="btn btn-primary px-3">حفظ وارسال</button>
+                                                                <button class="btn btn-outline-secondary">الغاء</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="1">
+                                                        <h5 class="field-header text-primary">الرسائل المرسلة</h5>
+                                                        <div class="table-responsive mx-3">
+                                                            <table class="table table-striped text-center">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col"> م</th>
+                                                                        <th scope="col">تاريخ الرسالة</th>
+                                                                        <th scope="col">محتوى الرسالة</th>
+                                                                        <th scope="col">نوع الرسائل</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>تود ريادة إشعارك بضرورة الدخول على حسابك لإكمال الطلب</td>
+                                                                        <td>برنامج الدورات الالكترونية</td>
+                                                                        <td>SMS</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>2</td>
+                                                                        <td>تود ريادة إشعارك بضرورة الدخول على حسابك لإكمال الطلب</td>
+                                                                        <td>تود ريادة إحاطتك بعدم اجتيازك مرحلة مطابقة الشروط بسبب . عدم تطابق المؤهل مع نوع نشاط المشروع . عدم وضوح الفكرة .</td>
+                                                                        <td>SMS</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>3</td>
+                                                                        <td>1445/5/29 هـ</td>
+                                                                        <td>تود ريادة إشعارك بضرورة الدخول على حسابك لإكمال الطلب</td>
+                                                                        <td>SMS</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>4</td>
+                                                                        <td>1445/5/29 هـ</td>
+                                                                        <td>برنامج الدورات الالكترونية</td>
+                                                                        <td>SMS</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>5</td>
+                                                                        <td>تود ريادة إشعارك بضرورة الدخول على حسابك لإكمال الطلب</td>
+                                                                        <td>برنامج انطلاقة</td>
+                                                                        <td>SMS</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-complains" role="tabpanel" aria-labelledby="v-pills-complains-tab" tabindex="2">
+                                                        <h5 class="field-header text-primary">الملاحظات والشكاوى </h5>
+                                                        <div class="row  mx-3">
+                                                            <div class="col-12 row mb-2">
+                                                                <label class="col-sm-3" for="name">نوع الملحوظة</label>
+                                                                <div class="col-sm-9">
+                                                                    <input id="name" type="text" class="form-control" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 row mb-2">
+
+                                                                <label class="col-sm-3" for="txarea">الرأي والملاحظات</label>
+                                                                <div class="col-sm-9">
+                                                                    <textarea name="txarea" rows="2" id="txarea" class="form-control"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 mb-2 d-flex align-items-center justify-content-center gap-2">
+                                                                <button class="btn btn-sm btn-primary px-4">ارسال</button>
+                                                                <button class="btn btn-sm btn-outline-secondary">الغاء</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mx-3">
+                                                            <div class="col-12 ">
+                                                                <div class="table-responsive ">
+                                                                    <table class="table table-striped text-center">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col"> م</th>
+                                                                                <th scope="col">رقم الطلب</th>
+                                                                                <th scope="col">التاريخ</th>
+                                                                                <th scope="col">محتوى الملحوظة</th>
+                                                                                <th scope="col">الحالة</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>1</td>
+                                                                                <td>118451179086</td>
+                                                                                <td>2023/12/17</td>
+                                                                                <td>برنامج الدورات الالكترونية</td>
+                                                                                <td>
+                                                                                    <small class="alert alert-success text-success">تم
+                                                                                        الرد</small>
+                                                                                    <span class="badge text-bg-primary p-2 px-3  rounded-1 mt-1">عرض
+                                                                                        الرد</span>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>2</td>
+                                                                                <td>118451179086</td>
+                                                                                <td>2023/12/17</td>
+                                                                                <td>تود ريادة إحاطتك بعدم اجتيازك مرحلة مطابقة الشروط بسبب . عدم تطابق المؤهل مع نوع نشاط المشروع . عدم وضوح الفكرة .
+                                                                                </td>
+                                                                                <td>
+                                                                                    <small class="alert alert-warning text-warning">
+                                                                                        لم يرد بعد</small>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-print" role="tabpanel" aria-labelledby="v-pills-print-tab" tabindex="3">
+                                                        <h5 class="field-header text-primary">طباعة الشهادة</h5>
+                                                        <div class="table-responsive mx-3">
+                                                            <table class="table table-striped text-center">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col"> م</th>
+                                                                        <th scope="col">الاسم</th>
+                                                                        <th scope="col">الدورة</th>
+                                                                        <th scope="col">تاريخ الدورة</th>
+                                                                        <th scope="col">العمليات</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>فهد سلطان الحربي</td>
+                                                                        <td>التسويق الالكتروني بالمحتوى</td>
+                                                                        <td>1445/5/29 هـ</td>
+                                                                        <td><button class="btn btn-sm btn-secondary"><i class="bi bi-printer"></i></button></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-events" role="tabpanel" aria-labelledby="v-pills-events-tab" tabindex="4">
+                                                        <h5 class="field-header text-primary">حضور فعاليات</h5>
+                                                        <div class="table-responsive mx-3">
+                                                            <table class="table table-striped text-center">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col"> م</th>
+                                                                        <th scope="col">الفاعلية</th>
+                                                                        <th scope="col">العمليات</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>التسويق الالكتروني بالمحتوى</td>
+                                                                        <td><button class="btn btn-sm btn-secondary"><i class="bi bi-link-45deg"></i></button></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>2</td>
+                                                                        <td>أساسيات دراسة الجدوى</td>
+                                                                        <td><button class="btn btn-sm btn-secondary"><i class="bi bi-link-45deg"></i></button></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact section -->
+        <footer id="footer"></footer>
+    </main>
+    <script>
+        // Fetch and insert navbar
+        fetch("./layout/navbar.html")
+            .then((response) => response.text())
+            .then((data) => (document.getElementById("navbar").innerHTML = data));
+
+        // Fetch and insert footer
+        fetch("./layout/footer.html")
+            .then((response) => response.text())
+            .then((data) => (document.getElementById("footer").innerHTML = data));
+    </script>
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap-hijri-datetimepicker.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="./js/jquery.backstretch.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

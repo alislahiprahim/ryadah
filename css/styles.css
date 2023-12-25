@@ -110,6 +110,10 @@ select {
     color: var(--text-color);
 }
 
+.form-control {
+    color: var(--text-color);
+}
+
 .f1 fieldset {
     display: none;
     .container-fluid {
@@ -134,6 +138,7 @@ select {
         width: calc(100% - 50px);
     }
 }
+
 .field-header {
     background-color: #FCFCFC;
     border-top-right-radius: 10px;
@@ -194,30 +199,71 @@ form {
 
 /* request details */
 
-.requests-details{
-         .nav-link{
-            background-color: #A2B3BE;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 10px;
-            width:100%;
-            font-size: 12px;
-            img{
-                scale: .6;
-            }
+.requests-details {
+    .nav-link {
+        background-color: #A2B3BE;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 12px;
+        img {
+            scale: .6;
         }
-        .count{
-            background-color: #fff;
-            font-size: 10px;
-            padding: 2px 5px;
-            border-radius: 4px;
-            color: var(--text-color);
-        }
+    }
+    .count {
+        background-color: #fff;
+        font-size: 1rem;
+        padding: 2px 5px;
+        border-radius: 4px;
+        color: var(--text-color);
+    }
 }
 
+
 /* request details */
+
+
+/* request stages */
+
+.stages-tabs-btn {
+    border-radius: 10px;
+    background-color: var(--body-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-link {
+        flex: auto;
+        border-radius: 10px;
+        color: var(--text-color);
+    }
+    .active {
+        color: var(--text-color);
+        background-color: var(--main-color);
+        color: #fff;
+    }
+    .nav-fill .nav-item .nav-link {
+        width: auto;
+    }
+}
+
+.tab-content-100 {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* request stages */
 
 @media (min-width: 1400px) {
     .f1 fieldset {
