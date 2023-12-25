@@ -165,6 +165,7 @@
     box-shadow: 0px 0px 40px #00000010;
     padding: 16px;
     margin-inline: 35px;
+    min-height: 480px;
     & .card-image {
         display: flex;
         align-items: center;
@@ -199,6 +200,10 @@
         font-size: 16px;
         max-height: 76px;
     }
+}
+
+#program-2 .program-card {
+    min-height: 350px;
 }
 
 .program-swiper {
@@ -583,6 +588,7 @@
     .tab-content .program-card {
         margin-inline: 0;
         padding: 7px;
+        min-height: 430px;
         & img {
             object-fit: scale-down;
             transform: scale(0.9, 0.9);
@@ -593,6 +599,9 @@
         & p {
             font-size: 12px;
         }
+    }
+    #program-2 .program-card {
+        min-height: 340px;
     }
     .p-inline-35 {
         padding-inline: 0px;
@@ -624,9 +633,13 @@
         margin-inline: 0;
         padding: 7px;
         margin-block: 10px;
+        min-height: auto;
         & img {
             object-fit: scale-down;
         }
+    }
+    #program-2 .program-card {
+        min-height: auto;
     }
     .program-layer {
         height: 100%;
