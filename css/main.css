@@ -121,6 +121,10 @@ li.nav-item .sRow {
     padding: 5px 10px;
 }
 
+.bi-list {
+    color: #fff;
+}
+
 
 /* end navbar */
 
@@ -193,8 +197,28 @@ footer p {
     }
 }
 
+@media (min-width: 992px) {
+    body {
+        padding: 0;
+    }
+    .btn-profile2 {
+        display: none;
+    }
+    .btn-profile {
+        display: block;
+    }
+}
+
 @media (max-width: 991.98px) {
     body {
         padding: 0;
+    }
+    .btn-profile2 {
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .btn-profile {
+        display: none;
     }
 }
