@@ -5,6 +5,7 @@
     --text-color: #717d85;
     --link-color: #a2b3be;
     --bg-linear: linear-gradient(180deg, #eef2f3 0%, rgba(238, 242, 243, 0.31) 53.65%, rgba(238, 242, 243, 0) 100%);
+
 }
 
 .scroller ::-webkit-scrollbar {
@@ -45,6 +46,10 @@ body {
     padding: 0;
     background-color: #EFF2F3;
     font-family: "Cairo";
+}
+
+main{
+    min-height: 100vh;
 }
 
 .btn-hover:hover,
