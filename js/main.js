@@ -50,29 +50,7 @@ jQuery(document).ready(function() {
     }
 });
 
-function moveToStep(stepperId, targetStepNumber) {
-    const form = $(`#${stepperId}`);
-    const progressLine = form.find(".f1-progress-line");
-    const currentStep = form.find(`fieldset[data-step]:visible`).data("step");
 
-    if (targetStepNumber !== currentStep) {
-        const targetFieldset = form.find(
-            `fieldset[data-step="${targetStepNumber}"]`
-        );
-        const currentFieldset = form.find(`fieldset[data-step="${currentStep}"]`);
-
-        currentFieldset.fadeOut(400, function() {
-            updateProgress(progressLine, targetStepNumber - 1);
-            form.find(`.${stepperId}-step.active`).removeClass("active");
-            form
-                .find(`.${stepperId}-step`)
-                .eq(targetStepNumber - 1)
-                .addClass("active");
-            targetFieldset.fadeIn("fast");
-            scroll_to_class(form, 20);
-        });
-    }
-}
 
 function initializeStepper(stepperId) {
     const form = $(`#${stepperId}`);
@@ -132,6 +110,30 @@ function initializeStepper(stepperId) {
     });
 }
 
+function moveToStep(stepperId, targetStepNumber) {
+    const form = $(`#${stepperId}`);
+    const progressLine = form.find(".f1-progress-line");
+    const currentStep = form.find(`fieldset[data-step]:visible`).data("step");
+
+    if (targetStepNumber !== currentStep) {
+        const targetFieldset = form.find(
+            `fieldset[data-step="${targetStepNumber}"]`
+        );
+        const currentFieldset = form.find(`fieldset[data-step="${currentStep}"]`);
+
+        currentFieldset.fadeOut(400, function() {
+            updateProgress(progressLine, targetStepNumber - 1);
+            form.find(`.${stepperId}-step.active`).removeClass("active");
+            form
+                .find(`.${stepperId}-step`)
+                .eq(targetStepNumber - 1)
+                .addClass("active");
+            targetFieldset.fadeIn("fast");
+            scroll_to_class(form, 20);
+        });
+    }
+}
+
 function updateProgress(progressLine, stepNumber) {
     const ratio = progressLine.data("ratio");
     progressLine
@@ -139,5 +141,10 @@ function updateProgress(progressLine, stepNumber) {
         .data("ratio", ratio);
 }
 
-initializeStepper("form-1");
 // moveToStep("form-1", 3);
+
+// register program page stepper
+initializeStepper("form-1");
+
+// finance model page stepper
+initializeStepper("form-2");

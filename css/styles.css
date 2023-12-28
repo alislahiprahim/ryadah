@@ -263,6 +263,14 @@ form {
 }
 
 
+/* finance page */
+#form-2{
+    .f1-progress{
+        width: calc(100% - 105px);
+    }
+}
+/* finance page */
+
 /* request stages */
 
 @media (min-width: 1400px) {
