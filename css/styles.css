@@ -63,6 +63,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     img {
         width: 100%;
         height: 100%;
@@ -84,6 +85,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     img {
         width: 100%;
         height: 100%;
@@ -116,6 +118,7 @@ select {
 
 .f1 fieldset {
     display: none;
+
     .container-fluid {
         background-color: #fff;
         /* padding: 15px 35px; */
@@ -123,17 +126,20 @@ select {
         margin-block: 40px;
         box-shadow: 0px 0px 50px #00000029;
     }
+
     h5 {
         color: var(--main-color);
         font-weight: 700;
         margin-bottom: 20px;
     }
+
     .text-area {
         display: flex;
         align-items: center;
         justify-content: end;
         padding-left: 38px;
     }
+
     textarea {
         width: calc(100% - 50px);
     }
@@ -162,9 +168,11 @@ select {
     color: #fff !important;
     font-weight: 500;
     font-size: 12px;
+
     &:first-child {
         border-top-right-radius: 4px;
     }
+
     &:last-child {
         border-top-left-radius: 4px;
     }
@@ -183,10 +191,12 @@ td small.alert {
 
 form {
     padding: 20px;
+
     .form-check-input {
         float: none;
         margin-left: 0;
     }
+
     small {
         font-size: 12px;
     }
@@ -209,10 +219,12 @@ form {
         margin-bottom: 10px;
         width: 100%;
         font-size: 12px;
+
         img {
             scale: .6;
         }
     }
+
     .count {
         background-color: #fff;
         font-size: 1rem;
@@ -234,21 +246,25 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
+
     .nav {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     .nav-link {
         flex: auto;
         border-radius: 10px;
         color: var(--text-color);
     }
+
     .active {
         color: var(--text-color);
         background-color: var(--main-color);
         color: #fff;
     }
+
     .nav-fill .nav-item .nav-link {
         width: auto;
     }
@@ -264,11 +280,12 @@ form {
 
 
 /* finance page */
-#form-2{
-    .f1-progress{
+#form-2 {
+    .f1-progress {
         width: calc(100% - 105px);
     }
 }
+
 /* finance page */
 
 /* request stages */
@@ -303,14 +320,17 @@ form {
             width: calc(100% - 25px);
         }
     }
+
     .f1-step .f1-step-icon {
         width: 50px;
         height: 50px;
     }
+
     .f1-step.active .f1-step-icon {
         width: 50px;
         height: 50px;
     }
+
     .f1-step p {
         font-size: 10px;
     }
@@ -320,19 +340,23 @@ form {
     .f1-steps {
         overflow-x: auto;
     }
+
     .f1 fieldset {
         .text-area {
             display: block;
             padding-left: 0;
         }
+
         textarea {
             width: calc(100% - 10px);
         }
     }
+
     .f1-progress {
         top: 26px;
         width: 88%;
     }
+
     .container {
         max-width: none;
     }
@@ -344,6 +368,7 @@ form {
             display: block;
             padding-left: 0;
         }
+
         textarea {
             width: calc(100%);
         }
@@ -354,22 +379,32 @@ form {
     .f1-step .f1-step-icon {
         width: 35px;
         height: 35px;
+
         img {
             scale: 0.6;
         }
     }
+
     .f1-step.active .f1-step-icon {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
+
         img {
             scale: 0.6;
         }
     }
+
     .f1-step p {
-        font-size: 9px;
+        font-size: 6px;
     }
+
     .f1-progress {
         top: 18px;
-        width: 80%;
+        width: 100%;
+        right: 10px;
+    }
+
+    #form-2 .f1-progress {
+        width: 100%;
     }
 }

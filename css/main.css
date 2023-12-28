@@ -130,7 +130,22 @@ li.nav-item .sRow {
     color: #fff;
 }
 
+.bi-upload::before{
+    transform: rotateZ(90deg);
+}
 
+.img-porfile{
+    background-color: var(--main-color);
+    padding: 5px 17px;
+    border-radius: 50%;
+}
+
+.line{
+    height: .7px;
+    background-color: var(--link-color);
+    width: 90%;
+    margin-block:10px;
+}
 /* end navbar */
 
 
@@ -221,8 +236,7 @@ footer p {
     .btn-profile2 {
         display: block;
         margin: auto;
-        margin-bottom: 10px;
-    }
+     }
     .btn-profile {
         display: none;
     }
