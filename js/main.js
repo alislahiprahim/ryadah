@@ -40,14 +40,6 @@ jQuery(document).ready(function () {
     // fields validation
   });
 
-  // progress bar updates
-  function updateProgress(progress_line, stepNumber) {
-    var ratio = progress_line.data("ratio");
-    progress_line
-      .attr("style", "width: " + ratio * stepNumber + "%;")
-      .data("ratio", ratio);
-  }
-
   // request details set nav tab name
   if ($("#v-pills-tab").length) {
     $("#tab-name").text($("#v-pills-tab li.nav-link").data("tab-label"));
