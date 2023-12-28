@@ -373,6 +373,15 @@ form {
             width: calc(100%);
         }
     }
+    .page-header{
+        p{
+            font-size: 12px;
+        }
+
+        button{
+            font-size: 12px;
+        }
+    }
 }
 
 @media (max-width: 500px) {
