@@ -177,7 +177,7 @@
                                                                 <td>
                                                                     <small class="alert alert-success text-success">تم
                                                                         الرد</small>
-                                                                    <span class="badge text-bg-primary p-2 px-3  rounded-1 mt-1">عرض
+                                                                    <span type="button" data-bs-toggle="modal" data-bs-target="#showReplay" class="badge text-bg-primary p-2 px-3  rounded-1 mt-1">عرض
                                                                         الرد</span>
                                                                 </td>
                                                             </tr>
@@ -217,7 +217,7 @@
                                                         <td>فهد سلطان الحربي</td>
                                                         <td>التسويق الالكتروني بالمحتوى</td>
                                                         <td>1445/5/29 هـ</td>
-                                                        <td><button class="btn btn-sm btn-secondary"><i class="bi bi-printer"></i></button></td>
+                                                        <td><button data-bs-toggle="modal" data-bs-target="#printModal" class="btn btn-sm btn-secondary"><i class="bi bi-printer"></i></button></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -238,12 +238,12 @@
                                                     <tr>
                                                         <td>1</td>
                                                         <td>التسويق الالكتروني بالمحتوى</td>
-                                                        <td><button class="btn btn-sm btn-secondary"><i class="bi bi-link-45deg"></i></button></td>
+                                                        <td><button data-bs-toggle="modal" data-bs-target="#printModal" class="btn btn-sm btn-secondary"><i class="bi bi-link-45deg"></i></button></td>
                                                     </tr>
                                                     <tr>
                                                         <td>2</td>
                                                         <td>أساسيات دراسة الجدوى</td>
-                                                        <td><button class="btn btn-sm btn-secondary"><i class="bi bi-link-45deg"></i></button></td>
+                                                        <td><button data-bs-toggle="modal" data-bs-target="#printModal" class="btn btn-sm btn-secondary"><i class="bi bi-link-45deg"></i></button></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -259,8 +259,143 @@
         </div>
         </div>
 
-        <!-- contact section -->
-    </main>
+
+        <!-- modal -->
+        <div class="modal fade" id="showReplay" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header d-flex align-items-center justify-content-between field-header">
+                  <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">المركز الرئيسي</h1>
+                   <i type="button" class="bi bi-x-lg" data-bs-dismiss="modal" aria-label="Close"></i>
+                </div>
+                <div class="modal-body">
+                  <p class="text-secondary text-center">تم حل المشكلة</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary mx-auto" data-bs-dismiss="modal">اغلاق</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- modal -->
+
+                <!-- modal -->
+                <div class="modal fade" id="printModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex align-items-center justify-content-between field-header">
+                          <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">تقييم الدورة التدريبية</h1>
+                           <i type="button" class="bi bi-x-lg" data-bs-dismiss="modal" aria-label="Close"></i>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+
+                                <div class="col-12 row bg-white rounded-2 py-2 mx-1 shadow-sm">
+                                    <div class="col-6 py-1">
+                                        <b class="text-primary fs-6">رقم الطلب</b>
+                                    <small class="text-secondary">100451211088</small>
+                                </div>
+                                <div class="col-6 py-1">
+                                    <b class="text-primary fs-6">اخر اجراء</b>
+                                    <small class="text-secondary">تقيم المشروع مجتاز</small>
+                                </div>
+                            </div>
+                            <div class="col-12 my-3">
+                                <p>عزيزي المتدرب ,, مشاركتنا برأيك هي محل اهتمامنا في إطار سعينا في معهد ريادة الأعمال الوطني لرفع مستوى الخدمات المقدمة لرواد الأعمال عليه نأمل الإجابة على الاستبيان أدناه بدقة وموضوعية شاكرين تعاونك سلفاً ..</p>
+                            </div>                            
+                            <div class="col-12">
+                                <div class="table-responsive mx-3">
+                                    <table class="table table-striped text-center">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col"> م</th>
+                                                <th scope="col">البنود</th>
+                                                <th scope="col">ممتاز</th>
+                                                <th scope="col">جيد جداً</th>
+                                                <th scope="col">جيد</th>
+                                                <th scope="col">مقبول</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>محتوى المادة العلمية للبرنامج التدريبي</td>
+                                                <td>
+                                                    <input class="form-check-input" type="radio" checked name="p" id="id1">
+                                                </td>
+                                                <td>
+                                                    <input class="form-check-input" type="radio" name="vg" id="id1">
+                                                </td>
+                                                <td>
+                                                    <input class="form-check-input" type="radio" name="g" id="id1">
+                                                </td>
+                                                <td>
+                                                    <input class="form-check-input" type="radio" name="a" id="id1">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>قدرة المحاضر على شرح المحتوى و إيصال المعلومة</td>
+                                                <td>
+                                                    <input class="form-check-input" type="radio" checked name="p" id="id2">
+                                                </td>
+                                                <td>
+                                                    <input class="form-check-input" type="radio" name="vg" id="id2">
+                                                </td>
+                                                <td>
+                                                    <input class="form-check-input" type="radio" name="g" id="id2">
+                                                </td>
+                                                <td>
+                                                    <input class="form-check-input" type="radio" name="a" id="id2">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>مدى الإستفادة من مشاركتك في البرنامج التدريبي بشكل عام</td>
+                                                <td>
+                                                    <input class="form-check-input" type="radio" checked name="p" id="id3">
+                                                </td>
+                                                <td>
+                                                    <input class="form-check-input" type="radio" name="vg" id="id3">
+                                                </td>
+                                                <td>
+                                                    <input class="form-check-input" type="radio" name="g" id="id3">
+                                                </td>
+                                                <td>
+                                                    <input class="form-check-input" type="radio" name="a" id="id3">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>مناسبة الوقت لانعقاد البرنامج التدريبي</td>
+                                                <td>
+                                                    <input class="form-check-input" type="radio" checked name="p" id="id4">
+                                                </td>
+                                                <td>
+                                                    <input class="form-check-input" type="radio" name="vg" id="id4">
+                                                </td>
+                                                <td>
+                                                    <input class="form-check-input" type="radio" name="g" id="id4">
+                                                </td>
+                                                <td>
+                                                    <input class="form-check-input" type="radio" name="a" id="id4">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary mx-auto" data-bs-dismiss="modal">تقييم وطباعة</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- modal -->
+
+     </main>
         <footer id="footer"></footer>
     <script>
         // Fetch and insert navbar
