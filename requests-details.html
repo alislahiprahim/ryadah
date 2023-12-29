@@ -38,7 +38,57 @@
 <body>
     <div class="loader"><img src="./images/home/riyadah-footer.svg" alt></div>
     <main class="position-relative">
-        <header id="navbar"></header>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="./images/logo.svg" alt="ريادة ويب سايت" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list fs-2"></i>
+        </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="riyadah-requests.html">طلبات ريادي</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="project-support-requests.html">طلبات دعم المشروع
+                    </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="training-courses.html">دورات
+                        تدريبية </a>
+                        </li>
+                        <li class="nav-item btn-profile2">
+                            <a class="nav-link" href="profile.html">الملف الشخصي</a>
+                        </li>
+                        <li class="nav-item btn-profile2">
+                            <a class="nav-link" href="index.html">تسجيل خروج</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-outline-light btn-profile" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person"></i>
+                مرحبا بك يا فهد
+            </button>
+                    <div class="dropdown-menu">
+                        <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                            <img class="img-porfile" src="./images/riyadah-footer.svg" alt="">
+                            <h6 class="fs-6">فهد سلطان الحربي</h6>
+                            <small class="text-secondary">info@domain.com</small>
+                            <div class="line"></div>
+                            <a class="dropdown-item text-secondary fs-6" href="profile.html"><i class="bi bi-person"></i> الملف الشخصي </a>
+                            <a class="dropdown-item text-secondary fs-6" href="index.html"><i class="bi bi-upload"></i> تسجيل خروج </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <div class="container page-header">
             <div class="row py-4">
                 <div class="col-12 d-flex justify-content-between align-items-center">
@@ -263,36 +313,36 @@
         <!-- modal -->
         <div class="modal fade" id="showReplay" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header d-flex align-items-center justify-content-between field-header">
-                  <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">المركز الرئيسي</h1>
-                   <i type="button" class="bi bi-x-lg" data-bs-dismiss="modal" aria-label="Close"></i>
+                <div class="modal-content">
+                    <div class="modal-header d-flex align-items-center justify-content-between field-header">
+                        <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">المركز الرئيسي</h1>
+                        <i type="button" class="bi bi-x-lg" data-bs-dismiss="modal" aria-label="Close"></i>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-secondary text-center">تم حل المشكلة</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary mx-auto" data-bs-dismiss="modal">اغلاق</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                  <p class="text-secondary text-center">تم حل المشكلة</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-outline-secondary mx-auto" data-bs-dismiss="modal">اغلاق</button>
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
         <!-- modal -->
 
-                <!-- modal -->
-                <div class="modal fade" id="printModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header d-flex align-items-center justify-content-between field-header">
-                          <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">تقييم الدورة التدريبية</h1>
-                           <i type="button" class="bi bi-x-lg" data-bs-dismiss="modal" aria-label="Close"></i>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
+        <!-- modal -->
+        <div class="modal fade" id="printModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header d-flex align-items-center justify-content-between field-header">
+                        <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">تقييم الدورة التدريبية</h1>
+                        <i type="button" class="bi bi-x-lg" data-bs-dismiss="modal" aria-label="Close"></i>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
 
-                                <div class="col-12 row bg-white rounded-2 py-2 mx-1 shadow-sm">
-                                    <div class="col-6 py-1">
-                                        <b class="text-primary fs-6">رقم الطلب</b>
+                            <div class="col-12 row bg-white rounded-2 py-2 mx-1 shadow-sm">
+                                <div class="col-6 py-1">
+                                    <b class="text-primary fs-6">رقم الطلب</b>
                                     <small class="text-secondary">100451211088</small>
                                 </div>
                                 <div class="col-6 py-1">
@@ -302,7 +352,7 @@
                             </div>
                             <div class="col-12 my-3">
                                 <p>عزيزي المتدرب ,, مشاركتنا برأيك هي محل اهتمامنا في إطار سعينا في معهد ريادة الأعمال الوطني لرفع مستوى الخدمات المقدمة لرواد الأعمال عليه نأمل الإجابة على الاستبيان أدناه بدقة وموضوعية شاكرين تعاونك سلفاً ..</p>
-                            </div>                            
+                            </div>
                             <div class="col-12">
                                 <div class="table-responsive mx-3">
                                     <table class="table table-striped text-center">
@@ -386,28 +436,20 @@
                                 </div>
                             </div>
                         </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-primary mx-auto" data-bs-dismiss="modal">تقييم وطباعة</button>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                <!-- modal -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary mx-auto" data-bs-dismiss="modal">تقييم وطباعة</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
 
-     </main>
-        <footer id="footer"></footer>
-    <script>
-        // Fetch and insert navbar
-        fetch("./layout/navbar.html")
-            .then((response) => response.text())
-            .then((data) => (document.getElementById("navbar").innerHTML = data));
+    </main>
+    <footer>
+        <p>ريادة.. معهد ريادة الأعمال الوطني | جميع الحقوق محفوظة 2023</p>
+    </footer>
 
-        // Fetch and insert footer
-        fetch("./layout/footer.html")
-            .then((response) => response.text())
-            .then((data) => (document.getElementById("footer").innerHTML = data));
-    </script>
     <script src="./js/jquery-1.11.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/bootstrap-hijri-datetimepicker.min.js"></script>
