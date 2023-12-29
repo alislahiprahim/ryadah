@@ -58,15 +58,15 @@ function initializeStepper(stepperId) {
 
     form.find("fieldset:first").fadeIn("fast");
 
-    form.find(".btn-next").on("click", function() {
+    form.on("click", "#btn-next", function() {
         const currentFieldset = $(this).closest("fieldset");
         const currentStep = currentFieldset.data("step");
         const nextStep = currentStep + 1;
 
         currentFieldset.fadeOut(400, function() {
             updateProgress(progressLine, nextStep - 1);
-            $(`.${stepperId}-step.active`)
-                .removeClass("active")
+            $(`#${stepperId} .f1-step.active`)
+                // .removeClass("active")
                 .next()
                 .addClass("active");
             $(`fieldset[data-step="${nextStep}"]`).fadeIn("fast");
@@ -74,14 +74,14 @@ function initializeStepper(stepperId) {
         });
     });
 
-    form.find(".btn-previous").on("click", function() {
+    form.on("click", "#btn-previous", function() {
         const currentFieldset = $(this).closest("fieldset");
         const currentStep = currentFieldset.data("step");
         const prevStep = currentStep - 1;
 
         currentFieldset.fadeOut(400, function() {
             updateProgress(progressLine, prevStep - 1);
-            $(`.${stepperId}-step.active`)
+            $(`#${stepperId} .f1-step.active`)
                 .removeClass("active")
                 .prev()
                 .addClass("active");
