@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Riyadah</title>
 
-    <link rel="icon" type="image/x-icon" href="./images/home/logo.svg" />
+    <link rel="icon" type="image/x-icon" href="./images/riyadah-footer.svg" />
     <meta property="og:url" content="https://www.rayiadah.com">
     <meta property="og:type" content="website">
     <meta property="og:title" content="rayiadah">
-    <meta property="og:image" itemprop="image" content="./images/home/logo.svg">
+    <meta property="og:image" itemprop="image" content="./images/logo.svg">
     <meta property="og:description" content="rayiadah description">
     <meta property="og:site_name" content="rayiadah">
 
@@ -36,7 +36,7 @@
 </head>
 
 <body>
-    <div class="loader"><img src="./images/home/riyadah-footer.svg" alt></div>
+    <div class="loader"><img src="./images/riyadah-footer.svg" alt></div>
     <main class="position-relative">
         <header id="navbar"></header>
         <div class="container page-header">
@@ -263,36 +263,36 @@
         <!-- modal -->
         <div class="modal fade" id="showReplay" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header d-flex align-items-center justify-content-between field-header">
-                  <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">المركز الرئيسي</h1>
-                   <i type="button" class="bi bi-x-lg" data-bs-dismiss="modal" aria-label="Close"></i>
+                <div class="modal-content">
+                    <div class="modal-header d-flex align-items-center justify-content-between field-header">
+                        <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">المركز الرئيسي</h1>
+                        <i type="button" class="bi bi-x-lg" data-bs-dismiss="modal" aria-label="Close"></i>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-secondary text-center">تم حل المشكلة</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary mx-auto" data-bs-dismiss="modal">اغلاق</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                  <p class="text-secondary text-center">تم حل المشكلة</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-outline-secondary mx-auto" data-bs-dismiss="modal">اغلاق</button>
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
         <!-- modal -->
 
-                <!-- modal -->
-                <div class="modal fade" id="printModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header d-flex align-items-center justify-content-between field-header">
-                          <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">تقييم الدورة التدريبية</h1>
-                           <i type="button" class="bi bi-x-lg" data-bs-dismiss="modal" aria-label="Close"></i>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
+        <!-- modal -->
+        <div class="modal fade" id="printModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header d-flex align-items-center justify-content-between field-header">
+                        <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">تقييم الدورة التدريبية</h1>
+                        <i type="button" class="bi bi-x-lg" data-bs-dismiss="modal" aria-label="Close"></i>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
 
-                                <div class="col-12 row bg-white rounded-2 py-2 mx-1 shadow-sm">
-                                    <div class="col-6 py-1">
-                                        <b class="text-primary fs-6">رقم الطلب</b>
+                            <div class="col-12 row bg-white rounded-2 py-2 mx-1 shadow-sm">
+                                <div class="col-6 py-1">
+                                    <b class="text-primary fs-6">رقم الطلب</b>
                                     <small class="text-secondary">100451211088</small>
                                 </div>
                                 <div class="col-6 py-1">
@@ -302,7 +302,7 @@
                             </div>
                             <div class="col-12 my-3">
                                 <p>عزيزي المتدرب ,, مشاركتنا برأيك هي محل اهتمامنا في إطار سعينا في معهد ريادة الأعمال الوطني لرفع مستوى الخدمات المقدمة لرواد الأعمال عليه نأمل الإجابة على الاستبيان أدناه بدقة وموضوعية شاكرين تعاونك سلفاً ..</p>
-                            </div>                            
+                            </div>
                             <div class="col-12">
                                 <div class="table-responsive mx-3">
                                     <table class="table table-striped text-center">
@@ -386,17 +386,17 @@
                                 </div>
                             </div>
                         </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-primary mx-auto" data-bs-dismiss="modal">تقييم وطباعة</button>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                <!-- modal -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary mx-auto" data-bs-dismiss="modal">تقييم وطباعة</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
 
-     </main>
-        <footer id="footer"></footer>
+    </main>
+    <footer id="footer"></footer>
     <script>
         // Fetch and insert navbar
         fetch("./layout/navbar.html")
