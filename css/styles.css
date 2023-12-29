@@ -278,6 +278,7 @@ form {
     justify-content: center;
 }
 
+/* request stages */
 
 /* finance page */
 #form-2 {
@@ -288,7 +289,10 @@ form {
 
 /* finance page */
 
-/* request stages */
+.form-check .form-check-input {
+    float: none;
+    margin-left: 0;
+}
 
 @media (min-width: 1400px) {
     .f1 fieldset {
