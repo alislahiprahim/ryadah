@@ -116,6 +116,21 @@ select {
     color: var(--text-color);
 }
 
+.hijri-picker {
+    position: relative;
+
+}
+.hijri-picker::after {
+    content: '\F1F6';
+    font-family: bootstrap-icons!important;
+    color: var(--text-color);
+    position: absolute;
+    top: 7px;
+    left: 20px;
+    z-index: 0;
+}
+
+
 .f1 fieldset {
     display: none;
 
@@ -377,12 +392,13 @@ form {
             width: calc(100%);
         }
     }
-    .page-header{
-        p{
+
+    .page-header {
+        p {
             font-size: 12px;
         }
 
-        button{
+        button {
             font-size: 12px;
         }
     }
